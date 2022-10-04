@@ -12,6 +12,7 @@ class CadastraDados {
     medicos = new Medico[5];
     agendas = new Agenda[20];
     consultas = new Consulta[20];
+    clinica = new Clinica[1];
   }
 
   // Retorna o inteiro referente ao índice do próximo elemento
