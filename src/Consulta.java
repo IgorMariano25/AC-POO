@@ -33,18 +33,20 @@ public class Consulta {
         return false;
     }
 
-    public void emitirNotaCobranca(consultaRevisao){
-        if (consultaRevisao == true){
-
-        } else if{
-
+    public string emitirNotaCobranca(consultaRevisao){
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        
+        return "Pagamento por: " + this.paciente.getNome() + ":\n" +
+        "Dia " + this.data.format(df) + "\n" +
+        "Valor da consulta: " + verificarValorCobranca() "\n" +
+        "CNPJ: " + this.clinica.getCnpj();
         }
     }
 
     public void verificarValorCobranca(){
         
     }
-    
+
     @Override
     public String toString() {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
