@@ -19,6 +19,40 @@ class CadastraDados {
   public int proximoElementoVazio(Object[] dado) {
     return 0;
   }
+
+  public void cadastraAgenda() {
+    Scanner cadastroAgendaScanner = new Scanner(System.in);
+
+      String informacoesCadastro;
+      informacoesCadastro = "===================================\n";
+      informacoesCadastro += "       cadastro de Agenda         ";
+      informacoesCadastro += "===================================\n";
+  
+      System.out.print("Informe o dia da semana da consulta: ");
+        System.out.print("1 - Domingo");
+        System.out.print("2 - Segunda-feira");
+        System.out.print("3 - Terça-feira");
+        System.out.print("4 - Quarta-feira");
+        System.out.print("5 - Quinta-feira");
+        System.out.print("6 - Sexta-feira");
+        System.out.print("7 - Sábado");
+        int converteDiaSemana = cadastroAgendaScanner.nextInt();
+
+      System.out.print("Informe o horário de início da consulta: ");
+        String horarioInicioAgenda = cadastroAgendaScanner.toString();
+
+      System.out.print("Informe o horário de fim da consulta: ");
+        String horarioFimAgenda = cadastroAgendaScanner.toString();  
+      
+      System.out.print("Informe o último dia que houve uma consulta: ");
+        String intervaloAgenda = cadastroAgendaScanner.toString();
+
+      System.out.print("Informe o médico que irá realizar a consulta: ");
+        String medicoAgenda = cadastroAgendaScanner.toString();
+        
+      System.out.print("Informe a clinica que deve ocorrer a consulta: ");
+        String clinicaAgenda = cadastroAgendaScanner.toString();          
+    };
   
   public void cadastraPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
@@ -36,7 +70,6 @@ class CadastraDados {
       
       System.out.print("Informe e-mail do paciente: ");
         String emailPaciente = cadastroPacienteScanner.toString();
-
     };
     
     // LocalDate dia = LocalDate.of(2000, 11, 16);
@@ -49,4 +82,3 @@ class CadastraDados {
 
   2
   */
-}
