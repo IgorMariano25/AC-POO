@@ -5,7 +5,7 @@ class CadastraDados {
   Medico medicos[];
   Consulta consultas[];
   Agenda agendas[];
-  Clinica clinica;
+  Clinica clinica[];
 
   CadastraDados() {
     pacientes = new Paciente[5];
