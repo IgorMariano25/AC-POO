@@ -40,6 +40,9 @@ class CadastraDados {
       cadastroPacienteScanner.close(); // fecha o notas, não vai mais consumir memória
     };
     
+    public void cadastraEndereco(){
+
+    }
     // LocalDate dia = LocalDate.of(2000, 11, 16);
     // paciente.cadastraEndereco(...);
   }
