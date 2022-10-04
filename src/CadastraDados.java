@@ -21,7 +21,7 @@ class CadastraDados {
   }
   
   public void cadastraPaciente() {
-    try(Scanner input = new Scanner(system.input)){
+    Scanner cadastroPacienteScanner = new Scanner(System.in);
 
       String cadastro;
       cadastro = "===================================\n";
