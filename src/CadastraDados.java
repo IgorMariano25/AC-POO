@@ -1,5 +1,5 @@
 import java.time.LocalDate;
-
+import java.util.Scanner;
 class CadastraDados {
   Paciente pacientes[];
   Medico medicos[];
