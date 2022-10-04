@@ -1,7 +1,6 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-
 public class Consulta {
     private LocalDate data;
     private LocalTime hora;
@@ -41,11 +40,10 @@ public class Consulta {
         "Valor da consulta: " + verificarValorCobranca() "\n" +
         "CNPJ: " + this.clinica.getCnpj();
         }
-    }
-
+    
     public void verificarValorCobranca(){
         if ();{
-        
+
         }
         switch (valorCobranca) {
             case 100:
