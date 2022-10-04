@@ -23,10 +23,10 @@ class CadastraDados {
   public void cadastraPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
 
-      String cadastro;
-      cadastro = "===================================\n";
-      cadastro += "       cadastro de Paciente       ";
-      cadastro += "===================================\n";
+      String informacoesCadastro;
+      informacoesCadastro = "===================================\n";
+      informacoesCadastro += "       cadastro de Paciente       ";
+      informacoesCadastro += "===================================\n";
   
       System.out.print("Informe o nome do paciente: ");
         this.paciente() = input.nextString();
