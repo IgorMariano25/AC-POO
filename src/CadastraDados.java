@@ -20,7 +20,7 @@ class CadastraDados {
     return 0;
   }
   
-  public void cadastraPaciente() {
+  public void cadastrarPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
 
       String informacoesCadastro;
