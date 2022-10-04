@@ -47,6 +47,12 @@ class CadastraDados {
     // paciente.cadastraEndereco(...);
 
     public void cadastrarMedico(){
+      Scanner cadastroMedicoScanner = new Scanner(System.in);
+
+      String informacoesCadastro;
+      informacoesCadastro = "===================================\n";
+      informacoesCadastro += "       Cadastro de Médico         ";
+      informacoesCadastro += "===================================\n";
 
   }
 
