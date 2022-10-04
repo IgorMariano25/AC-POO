@@ -21,6 +21,18 @@ class CadastraDados {
   }
   
   public void cadastraPaciente() {
+    try(Scanner input = new Scanner(system.input)){
+
+      String cadastro;
+      cadastro = "===================================\n";
+      cadastro += "       cadastro de Paciente       ";
+      cadastro += "===================================\n";
+  
+      System.out.print("Informe o nome do paciente: ");
+        this.paciente() = input.nextString();
+        
+    };
+    
     // LocalDate dia = LocalDate.of(2000, 11, 16);
     // paciente.cadastraEndereco(...);
   }
