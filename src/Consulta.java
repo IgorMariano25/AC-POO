@@ -41,6 +41,10 @@ public class Consulta {
         }
     }
 
+    public void verificarValorCobranca(){
+        
+    }
+    
     @Override
     public String toString() {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
