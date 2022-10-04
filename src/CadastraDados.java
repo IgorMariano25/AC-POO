@@ -45,6 +45,9 @@ class CadastraDados {
     }
     // LocalDate dia = LocalDate.of(2000, 11, 16);
     // paciente.cadastraEndereco(...);
+
+    public void cadastrarMedico(){
+
   }
 
   /*
