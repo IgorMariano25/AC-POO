@@ -1,5 +1,5 @@
 # AP1-POO
-Códigos para a prova de Porgramação Orientada à Objetos
+Códigos para a prova de Programação Orientada à Objetos
 
 ## Falta fazer:
 
