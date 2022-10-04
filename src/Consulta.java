@@ -44,6 +44,7 @@ public class Consulta {
     }
 
     public void verificarValorCobranca(){
+        if ();{
         
     }
 
