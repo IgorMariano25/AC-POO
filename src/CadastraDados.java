@@ -29,8 +29,14 @@ class CadastraDados {
       informacoesCadastro += "===================================\n";
   
       System.out.print("Informe o nome do paciente: ");
-        this.paciente() = input.nextString();
-        
+        String nomePaciente = cadastroPacienteScanner.toString();
+
+      System.out.print("Informe o CPF do paciente: ");
+        String cpfPaciente = cadastroPacienteScanner.toString();
+      
+      System.out.print("Informe e-mail do paciente: ");
+        String emailPaciente = cadastroPacienteScanner.toString();
+
     };
     
     // LocalDate dia = LocalDate.of(2000, 11, 16);
