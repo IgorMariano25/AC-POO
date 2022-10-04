@@ -33,6 +33,14 @@ public class Consulta {
         return false;
     }
 
+    public void emitirNotaCobranca(consultaRevisao){
+        if (consultaRevisao == true){
+
+        } else if{
+
+        }
+    }
+
     @Override
     public String toString() {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
