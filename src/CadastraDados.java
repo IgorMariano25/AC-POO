@@ -37,6 +37,7 @@ class CadastraDados {
       System.out.print("Informe e-mail do paciente: ");
         String emailPaciente = cadastroPacienteScanner.toString();
 
+      cadastroPacienteScanner.close(); // fecha o notas, não vai mais consumir memória
     };
     
     // LocalDate dia = LocalDate.of(2000, 11, 16);
