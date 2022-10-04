@@ -1,6 +1,6 @@
 public class Consultorio extends Clinica {
     private String unidade;
-    private Telefone[] telefones;
+    private Telefone[1] telefones;
     private int numTels;
 
     public Consultorio(String unidade, Telefone[] telefones, int numTels, String nome, String cnpj) {
