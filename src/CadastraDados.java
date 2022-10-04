@@ -5,13 +5,14 @@ class CadastraDados {
   Medico medicos[];
   Consulta consultas[];
   Agenda agendas[];
-  Clinica clinica;
+  Clinica clinica[];
 
   CadastraDados() {
     pacientes = new Paciente[5];
     medicos = new Medico[5];
     agendas = new Agenda[20];
     consultas = new Consulta[20];
+    clinica = new Clinica[1];
   }
 
   // Retorna o inteiro referente ao índice do próximo elemento
@@ -54,7 +55,7 @@ class CadastraDados {
         String clinicaAgenda = cadastroAgendaScanner.toString();          
     };
   
-  public void cadastraPaciente() {
+  public void cadastrarPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
 
       String informacoesCadastro;
@@ -70,10 +71,32 @@ class CadastraDados {
       
       System.out.print("Informe e-mail do paciente: ");
         String emailPaciente = cadastroPacienteScanner.toString();
+
+      cadastroPacienteScanner.close(); // fecha o notas, não vai mais consumir memória
     };
     
+    public void cadastrarEndereco(){
+
+    }
     // LocalDate dia = LocalDate.of(2000, 11, 16);
     // paciente.cadastraEndereco(...);
+
+    public void cadastrarMedico(){
+      Scanner cadastroMedicoScanner = new Scanner(System.in);
+
+      String informacoesCadastro;
+      informacoesCadastro = "===================================\n";
+      informacoesCadastro += "       Cadastro de Médico         ";
+      informacoesCadastro += "===================================\n";
+  
+      System.out.print("Informe o nome do médico: ");
+        String nomeMedico = cadastroMedicoScanner.toString();
+
+      System.out.print("Informe o CPF do paciente: ");
+        String cpfMedico = cadastroMedicoScanner.toString();
+      
+      System.out.print("Informe e-mail do paciente: ");
+        String emailMedico = cadastroMedicoScanner.toString();
   }
 
   /*
