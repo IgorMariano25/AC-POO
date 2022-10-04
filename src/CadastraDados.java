@@ -54,6 +54,9 @@ class CadastraDados {
       informacoesCadastro = "===================================\n";
       informacoesCadastro += "       Cadastro de Médico         ";
       informacoesCadastro += "===================================\n";
+  
+      System.out.print("Informe o nome do médico: ");
+        String nomeMedico = cadastroMedicoScanner.toString();
 
   }
 
