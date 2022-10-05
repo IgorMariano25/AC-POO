@@ -21,6 +21,10 @@ public abstract class Paciente extends Pessoa {
         this.endereco = new Endereco(logradouro, numero, complemento, bairro, cep, cidade, uf);
     }
 
+    public boolean getPlanoParticular() {
+        return this.planoParticular;
+    }
+
     @Override
     public void exibeInfo() {
         String msg = "";
