@@ -41,10 +41,15 @@ public class Consulta {
         "CNPJ: " + this.clinica.getCnpj();
         }
     
-    public void verificarValorCobranca(){
-        if ();{
-
-        }
+    public Integer verificarValorCobranca(){
+        int valorCobranca = 0;
+            if (getPlanoParticular() = true) {
+                valorCobranca += 100;
+            } else if (consultaRevisao = true){ 
+                valorCobranca += 400;
+            } else if (consultaRevisao = false){
+                valorCobranca += 200;
+            }
         switch (valorCobranca) {
             case 100:
                 banco.cadastraPaciente();
