@@ -1,4 +1,6 @@
+import java.sql.Time;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Scanner;
 class CadastraDados {
   Paciente pacientes[];
@@ -40,19 +42,22 @@ class CadastraDados {
         int converteDiaSemana = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o horário de início da consulta: ");
-        String horarioInicioAgenda = cadastroAgendaScanner.toString();
+        Time horarioInicioAgenda = cadastroAgendaScanner.toString();
 
       System.out.print("Informe o horário de fim da consulta: ");
-        String horarioFimAgenda = cadastroAgendaScanner.toString();  
+        Time horarioFimAgenda = cadastroAgendaScanner();  
       
       System.out.print("Informe o último dia que houve uma consulta: ");
-        String intervaloAgenda = cadastroAgendaScanner.toString();
+        int intervaloAgenda = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o médico que irá realizar a consulta: ");
         String medicoAgenda = cadastroAgendaScanner.toString();
         
       System.out.print("Informe a clinica que deve ocorrer a consulta: ");
-        String clinicaAgenda = cadastroAgendaScanner.toString();          
+        String clinicaAgenda = cadastroAgendaScanner.toString();
+
+      System.out.print("Informe o consultorio : ");
+        String consultorioAgenda = cadastroAgendaScanner.toString();             
     };
   
   public void cadastrarPaciente() {
@@ -98,6 +103,7 @@ class CadastraDados {
       System.out.print("Informe e-mail do paciente: ");
         String emailMedico = cadastroMedicoScanner.toString();
   }
+}  
 
   /*
   1 - fulano - cardiologia
