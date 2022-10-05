@@ -26,7 +26,7 @@ class CadastraDados {
 
       String informacoesCadastro;
       informacoesCadastro = "===================================\n";
-      informacoesCadastro += "       cadastro de Paciente       ";
+      informacoesCadastro += "       Cadastro de Paciente       ";
       informacoesCadastro += "===================================\n";
   
       System.out.print("Informe o nome do paciente: ");
