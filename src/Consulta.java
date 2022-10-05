@@ -50,22 +50,8 @@ public class Consulta {
             } else if (consultaRevisao = false){
                 valorCobranca += 200;
             }
-        switch (valorCobranca) {
-            case 100:
-                banco.cadastraPaciente();
-                System.out.("opção 1!\n");
-                break;
-            case "2":
-                System.out.println("opção 2!\n");
-                break;
-            case "3":
-                System.out.println("opção 3!\n");
-                break;
-            default:
-                System.out.println("Volte sempre!\n");
-                opcao = "";
-            return
-        }
+        return valorCobranca;
+    }
     }
 
     @Override
