@@ -35,9 +35,9 @@ public class Consulta {
     public String emitirNotaCobranca(consultaRevisa){
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         
-        return "Pagamento por: " + this.paciente.getNome() + ":\n" +
-        "Dia " + this.data.format(df) + "\n" +
-        "Valor da consulta: " + verificarValorCobranca() "\n" +
+        return "Pagamento por: " + this.paciente.getNome() + "\n" +
+        "Dia: " + this.data.format(df) + "\n" +
+        "Valor da consulta: " + verificarValorCobranca() + "\n" +
         "CNPJ: " + this.clinica.getCnpj();
         }
     
