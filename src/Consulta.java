@@ -32,7 +32,7 @@ public class Consulta {
         return false;
     }
 
-    public String emitirNotaCobranca(consultaRevisa){
+    public String emitirNotaCobranca(consultaRevisao){
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         
         return "Pagamento por: " + this.paciente.getNome() + "\n" +
