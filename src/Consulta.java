@@ -7,6 +7,7 @@ public class Consulta {
     private boolean consultaRevisao;
     private Paciente paciente;
     private Medico medico;
+    private Clinica clinica;
 
     public Consulta(boolean consultaRevisao, Paciente paciente, Medico medico) {
         this.consultaRevisao = consultaRevisao;
@@ -32,7 +33,7 @@ public class Consulta {
         return false;
     }
 
-    public String emitirNotaCobranca(consultaRevisao){
+    public String emitirNotaCobranca(){
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         
         return "Pagamento por: " + this.paciente.getNome() + "\n" +
@@ -43,11 +44,11 @@ public class Consulta {
     
     public Integer verificarValorCobranca(){
         int valorCobranca = 0;
-            if (getPlanoParticular() = true) {
+            if (paciente.getPlanoParticular() == true) {
                 valorCobranca += 100;
-            } else if (consultaRevisao = true){ 
+            } else if (consultaRevisao == true){ 
                 valorCobranca += 400;
-            } else if (consultaRevisao = false){
+            } else if (consultaRevisao == false){
                 valorCobranca += 200;
             }
         return valorCobranca;

@@ -42,13 +42,13 @@ class CadastraDados {
         int converteDiaSemana = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o horário de início da consulta: ");
-        Time horarioInicioAgenda = cadastroAgendaScanner.toString();
+        String horarioInicioAgenda =  cadastroAgendaScanner.toString();
 
       System.out.print("Informe o horário de fim da consulta: ");
-        Time horarioFimAgenda = cadastroAgendaScanner();  
+        String horarioFimAgenda = cadastroAgendaScanner.toString();  
       
       System.out.print("Informe o último dia que houve uma consulta: ");
-        int intervaloAgenda = cadastroAgendaScanner.nextInt();
+        Integer intervaloAgenda = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o médico que irá realizar a consulta: ");
         String medicoAgenda = cadastroAgendaScanner.toString();
@@ -57,7 +57,7 @@ class CadastraDados {
         String clinicaAgenda = cadastroAgendaScanner.toString();
 
       System.out.print("Informe o consultorio : ");
-        String consultorioAgenda = cadastroAgendaScanner.toString();             
+        String consultorioAgenda = cadastroAgendaScanner.toString();
     };
   
   public void cadastrarPaciente() {
@@ -102,6 +102,12 @@ class CadastraDados {
       
       System.out.print("Informe e-mail do paciente: ");
         String emailMedico = cadastroMedicoScanner.toString();
+  }
+
+  private String exibeInfo(){
+    String informacao = "";
+    
+  return informacao;
   }
 }  
 
