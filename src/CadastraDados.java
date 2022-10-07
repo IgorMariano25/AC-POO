@@ -158,7 +158,7 @@ class CadastraDados {
     informacoesGeraisDeCadastro += "       INFORMAÇÕES GERAIS DE CADASTRO        ";
     informacoesGeraisDeCadastro += "=============================================\n";
 
-  return informacao;
+  return informacoesGeraisDeCadastro;
   }
 }  
 
