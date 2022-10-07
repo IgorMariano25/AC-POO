@@ -1,3 +1,4 @@
+import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -105,6 +106,50 @@ class CadastraDados {
       System.out.print("Informe e-mail do paciente: ");
         String emailMedico = cadastroMedicoScanner.toString();
   }
+    public void cadastrarConsulta() {
+      Scanner cadastroConsultaScanner = new Scanner(System.in);
+
+      String informacoesCadastro;
+      informacoesCadastro = "===================================\n";
+      informacoesCadastro += "       Cadastro de Consulta        ";
+      informacoesCadastro += "===================================\n";
+  
+      System.out.print("Informe a data da consulta: ");
+        String dataConsulta = cadastroConsultaScanner.toString();
+
+      System.out.print("Informe a hora da consulta: ");
+        String horaConsulta = cadastroConsultaScanner.toString();
+      
+      System.out.print("Informe se a consulta é revisão: ");
+        String revisaoConsulta = cadastroConsultaScanner.toString();
+
+      System.out.print("Informe o paciente que irá realizar a consulta: ");
+        String pacienteConsulta = cadastroConsultaScanner.toString();
+
+      System.out.print("Informe o médico que irá realizar a consulta:");
+        String medicoConsulta = cadastroConsultaScanner.toString();
+    }
+
+    public void cadastrarClinica() {
+      Scanner cadastroClinicaScanner = new Scanner(System.in);
+
+      String informacoesCadastro;
+      informacoesCadastro = "===================================\n";
+      informacoesCadastro += "       Cadastro de Clinica       ";
+      informacoesCadastro += "===================================\n";
+  
+      System.out.print("Informe o nome da clinica: ");
+        String nomeClinica = cadastroClinicaScanner.toString();
+
+      System.out.print("Informe o cnpj da clinica: ");
+        String cnpjClinica = cadastroClinicaScanner.toString();
+      
+      System.out.print("Informe o endereço da clinica: ");
+        String enderecoClinica = cadastroClinicaScanner.toString();
+
+      System.out.print("Informe o telefone da clinica: ");
+        String telefoneClinica = cadastroClinicaScanner.toString();
+    }
 
   private String exibeInfo(){
     String informacao = "";
