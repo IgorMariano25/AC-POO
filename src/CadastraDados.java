@@ -103,6 +103,12 @@ class CadastraDados {
       System.out.print("Informe e-mail do paciente: ");
         String emailMedico = cadastroMedicoScanner.toString();
   }
+
+  private String exibeInfo(){
+    String informacao = "";
+    
+  return informacao;
+  }
 }  
 
   /*
