@@ -20,7 +20,7 @@ class Main {
       opcao = scanner.nextLine();
       switch (opcao) {
         case "1":
-          banco.cadastraPaciente();
+          banco.cadastrarPaciente();
           System.out.println("opção 1!\n");
           break;
         case "2":
