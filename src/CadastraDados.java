@@ -42,7 +42,7 @@ class CadastraDados {
         int converteDiaSemana = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o horário de início da consulta: ");
-        Time horarioInicioAgenda = cadastroAgendaScanner.toString();
+        String horarioInicioAgenda =  cadastroAgendaScanner.toString();
 
       System.out.print("Informe o horário de fim da consulta: ");
         Time horarioFimAgenda = cadastroAgendaScanner();  
