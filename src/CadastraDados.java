@@ -48,7 +48,7 @@ class CadastraDados {
         String horarioFimAgenda = cadastroAgendaScanner.toString();  
       
       System.out.print("Informe o último dia que houve uma consulta: ");
-        int intervaloAgenda = cadastroAgendaScanner.nextInt();
+        Integer intervaloAgenda = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o médico que irá realizar a consulta: ");
         String medicoAgenda = cadastroAgendaScanner.toString();
@@ -57,7 +57,7 @@ class CadastraDados {
         String clinicaAgenda = cadastroAgendaScanner.toString();
 
       System.out.print("Informe o consultorio : ");
-        String consultorioAgenda = cadastroAgendaScanner.toString();             
+        String consultorioAgenda = cadastroAgendaScanner.toString();
     };
   
   public void cadastrarPaciente() {
