@@ -128,6 +128,27 @@ class CadastraDados {
         String medicoConsulta = cadastroConsultaScanner.toString();
     }
 
+    public void cadastrarClinica() {
+      Scanner cadastroClinicaScanner = new Scanner(System.in);
+
+      String informacoesCadastro;
+      informacoesCadastro = "===================================\n";
+      informacoesCadastro += "       Cadastro de Clinica       ";
+      informacoesCadastro += "===================================\n";
+  
+      System.out.print("Informe o nome da clinica: ");
+        String nomeClinica = cadastroClinicaScanner.toString();
+
+      System.out.print("Informe o cnpj da clinica: ");
+        String cnpjClinica = cadastroClinicaScanner.toString();
+      
+      System.out.print("Informe o endereço da clinica: ");
+        String enderecoClinica = cadastroClinicaScanner.toString();
+
+      System.out.print("Informe o telefone da clinica: ");
+        String telefoneClinica = cadastroClinicaScanner.toString();
+    }
+
   private String exibeInfo(){
     String informacao = "";
     
