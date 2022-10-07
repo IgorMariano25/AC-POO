@@ -58,6 +58,8 @@ class CadastraDados {
 
       System.out.print("Informe o consultorio : ");
         String consultorioAgenda = cadastroAgendaScanner.toString();
+
+      cadastroAgendaScanner.close();  
     };
   
   public void cadastrarPaciente() {
