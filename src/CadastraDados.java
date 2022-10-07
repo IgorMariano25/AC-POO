@@ -152,8 +152,12 @@ class CadastraDados {
     }
 
   private String exibeInfo(){
-    String informacao = "";
-    
+    String informacoesGeraisDeCadastro = "";
+
+    informacoesGeraisDeCadastro = "==============================================\n";
+    informacoesGeraisDeCadastro += "       INFORMAÇÕES GERAIS DE CADASTRO        ";
+    informacoesGeraisDeCadastro += "=============================================\n";
+
   return informacao;
   }
 }  
