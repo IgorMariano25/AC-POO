@@ -44,11 +44,11 @@ public class Consulta {
     
     public Integer verificarValorCobranca(){
         int valorCobranca = 0;
-            if (getPlanoParticular() = true) {
+            if (paciente.getPlanoParticular() == true) {
                 valorCobranca += 100;
-            } else if (consultaRevisao = true){ 
+            } else if (consultaRevisao == true){ 
                 valorCobranca += 400;
-            } else if (consultaRevisao = false){
+            } else if (consultaRevisao == false){
                 valorCobranca += 200;
             }
         return valorCobranca;
