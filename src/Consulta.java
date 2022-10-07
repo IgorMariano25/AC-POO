@@ -7,6 +7,7 @@ public class Consulta {
     private boolean consultaRevisao;
     private Paciente paciente;
     private Medico medico;
+    private Clinica clinica;
 
     public Consulta(boolean consultaRevisao, Paciente paciente, Medico medico) {
         this.consultaRevisao = consultaRevisao;
