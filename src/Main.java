@@ -32,6 +32,7 @@ class Main {
         default:
           System.out.println("Volte sempre!\n");
           opcao = "";
+        scanner.close();
       }
     }
   }
