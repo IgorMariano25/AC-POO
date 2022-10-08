@@ -100,10 +100,10 @@ class CadastraDados {
       System.out.print("Informe o nome do médico: ");
         String nomeMedico = cadastroMedicoScanner.toString();
 
-      System.out.print("Informe o CPF do paciente: ");
+      System.out.print("Informe o CPF do médico: ");
         String cpfMedico = cadastroMedicoScanner.toString();
       
-      System.out.print("Informe e-mail do paciente: ");
+      System.out.print("Informe e-mail do médico: ");
         String emailMedico = cadastroMedicoScanner.toString();
 
       cadastroMedicoScanner.close();
