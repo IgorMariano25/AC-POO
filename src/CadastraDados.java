@@ -105,6 +105,8 @@ class CadastraDados {
       
       System.out.print("Informe e-mail do paciente: ");
         String emailMedico = cadastroMedicoScanner.toString();
+
+      cadastroMedicoScanner.close();
   }
     public void cadastrarConsulta() {
       Scanner cadastroConsultaScanner = new Scanner(System.in);
