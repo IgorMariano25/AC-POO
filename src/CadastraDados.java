@@ -153,6 +153,8 @@ class CadastraDados {
 
       System.out.print("Informe o telefone da clinica: ");
         String telefoneClinica = cadastroClinicaScanner.toString();
+
+      cadastroClinicaScanner.close();
     }
 
   private String exibeInfo(){
