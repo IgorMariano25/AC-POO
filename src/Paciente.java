@@ -29,9 +29,9 @@ public abstract class Paciente extends Pessoa {
     public void exibeInfo() {
         String msg = "";
 
-        msg += this.nome + "\n";
+        msg += "Nome: " + this.nome + "\n";
         msg += "Data de nascimento: " + this.dataNascimento + "\n";
-        msg += this.eMail + "\n";
+        msg += "E-mail: " + this.eMail + "\n";
         msg += "CPF: " + this.cpf + "\n";
         msg += "Telefones:" + "\n";
         msg += this.listaTelefones();
