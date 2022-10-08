@@ -76,8 +76,8 @@ public class Consulta {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         DateTimeFormatter tf = DateTimeFormatter.ofPattern("hh:mm");
 
-        return "Consulta de " + this.paciente.getNome() + " com dr(a). " + this.medico.getNome() + ":\n" +
-               "Dia " + this.data.format(df) + "\n" +
-               "Às " + this.hora.format(tf);
+        return "Consulta de " + this.paciente.getNome() + " com Dr(a). " + this.medico.getNome() + "\n" +
+               "Dia: " + this.data.format(df) + "\n" +
+               "Às: " + this.hora.format(tf);
     }
 }
