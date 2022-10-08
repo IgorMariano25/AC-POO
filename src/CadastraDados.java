@@ -157,7 +157,7 @@ class CadastraDados {
       cadastroClinicaScanner.close();
     }
 
-  private String exibeInfo(){
+  private void exibeInfo(){
     String informacoesGeraisDeCadastro = "";
 
     informacoesGeraisDeCadastro = "==============================================\n";
