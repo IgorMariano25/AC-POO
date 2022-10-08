@@ -12,6 +12,7 @@ class Main {
     menu += "1 - Cadastrar paciente;\n";
     menu += "2 - Exibir pacientes cadastrados;\n";
     menu += "3 - Cadastrar médico;\n";
+    menu += "4 - Emitir nota de cobrança;\n";
     menu += "Qualquer outra tecla - Sair do programa;\n";
     opcao = "-";
 
@@ -21,19 +22,25 @@ class Main {
       switch (opcao) {
         case "1":
           banco.cadastrarPaciente();
-          System.out.println("opção 1!\n");
+          System.out.println("opção 1: Cadastrar paciente!\n");
           break;
         case "2":
-          System.out.println("opção 2!\n");
+          
+          System.out.println("opção 2: Exibir pacientes cadastrados!\n");
           break;
         case "3":
-          System.out.println("opção 3!\n");
+          banco.cadastrarMedico();
+          System.out.println("opção 3: Cadastrar médico!\n");
           break;
+        case "4":
+          System.out.println("opção 4: Emitir nota de cobrança!"+ "\n" + emitirNotaCobranca());
         default:
           System.out.println("Volte sempre!\n");
           opcao = "";
         scanner.close();
       }
     }
+    //testes
+
   }
 }
