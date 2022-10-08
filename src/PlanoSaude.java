@@ -14,3 +14,4 @@ public class PlanoSaude {
         informaçoesPlanoSaude = "Limite de consultas do plano: " + this.limiteConsultasMes;
         System.out.println(informaçoesPlanoSaude);
 }
+}
