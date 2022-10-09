@@ -136,8 +136,8 @@ class CadastraDados {
   }
 
   String nomeClinica, cnpjClinica, enderecoClinica, telefoneClinica;
-    public void cadastrarClinica() {
-      Scanner cadastroClinicaScanner = new Scanner(System.in);
+  public void cadastrarClinica() {
+    Scanner cadastroClinicaScanner = new Scanner(System.in);
 
       String informacoesCadastro;
       informacoesCadastro = "===================================\n";
