@@ -165,6 +165,7 @@ class CadastraDados {
     informacoesGeraisDeCadastro = "==============================================\n";
     informacoesGeraisDeCadastro += "        INFORMAÇÕES GERAIS DE CADASTRO       ";
     informacoesGeraisDeCadastro += "=============================================\n";
+    System.out.println(informacoesGeraisDeCadastro);
 
     exibeInformacoesPaciente();
     exibeInformacoesMedico();
