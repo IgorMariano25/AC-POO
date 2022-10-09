@@ -53,7 +53,7 @@ class CadastraDados {
         medicoAgenda = cadastroAgendaScanner.toString();
         
       System.out.print("Informe a clinica que deve ocorrer a consulta: ");
-        String clinicaAgenda = cadastroAgendaScanner.toString();
+        clinicaAgenda = cadastroAgendaScanner.toString();
 
       System.out.print("Informe o consultorio : ");
         String consultorioAgenda = cadastroAgendaScanner.toString();
