@@ -208,7 +208,7 @@ class CadastraDados {
     informacoesCadastroConsulta += "Hora: " + horaConsulta;
     informacoesCadastroConsulta += "É uma consulta de revisão ? " + revisaoConsulta;
     System.out.println(informacoesCadastroConsulta);
-}  
+    }
 
     String informacoesCadastroClinica;
     public void exibeInformacoesClinica(){
