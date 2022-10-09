@@ -21,16 +21,16 @@ class Main {
       opcao = scanner.nextLine();
       switch (opcao) {
         case "1":
-          banco.cadastrarPaciente();
           System.out.println("opção 1: Cadastrar paciente!\n");
+          banco.cadastrarPaciente();
           break;
         case "2":
-          // banco.exibeInfo();
           System.out.println("opção 2: Exibir pacientes cadastrados!\n");
+          // banco.exibeInfo();
           break;
         case "3":
-          banco.cadastrarMedico();
           System.out.println("opção 3: Cadastrar médico!\n");
+          banco.cadastrarMedico();
           break;
         default:
           System.out.println("Volte sempre!\n");
