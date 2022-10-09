@@ -38,7 +38,7 @@ class CadastraDados {
         System.out.print("5 - Quinta-feira");
         System.out.print("6 - Sexta-feira");
         System.out.print("7 - Sábado");
-        int converteDiaSemana = cadastroAgendaScanner.nextInt();
+        converteDiaSemana = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o horário de início da consulta: ");
         String horarioInicioAgenda =  cadastroAgendaScanner.toString();
