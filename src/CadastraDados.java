@@ -47,7 +47,7 @@ class CadastraDados {
         horarioFimAgenda = cadastroAgendaScanner.toString();  
       
       System.out.print("Informe o último dia que houve uma consulta: ");
-        Integer intervaloAgenda = cadastroAgendaScanner.nextInt();
+        intervaloAgenda = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o médico que irá realizar a consulta: ");
         String medicoAgenda = cadastroAgendaScanner.toString();
