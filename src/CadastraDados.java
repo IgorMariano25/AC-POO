@@ -130,7 +130,7 @@ class CadastraDados {
         pacienteConsulta = cadastroConsultaScanner.toString();
 
     System.out.print("Informe o médico que irá realizar a consulta:");
-        String medicoConsulta = cadastroConsultaScanner.toString();
+        medicoConsulta = cadastroConsultaScanner.toString();
 
       cadastroConsultaScanner.close();
     }
