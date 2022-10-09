@@ -50,7 +50,7 @@ class CadastraDados {
         intervaloAgenda = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o médico que irá realizar a consulta: ");
-        String medicoAgenda = cadastroAgendaScanner.toString();
+        medicoAgenda = cadastroAgendaScanner.toString();
         
       System.out.print("Informe a clinica que deve ocorrer a consulta: ");
         String clinicaAgenda = cadastroAgendaScanner.toString();
