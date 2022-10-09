@@ -126,7 +126,7 @@ class CadastraDados {
     System.out.print("Informe se a consulta é revisão (Sim/Não): ");
         revisaoConsulta = cadastroConsultaScanner.toString();
 
-      System.out.print("Informe o paciente que irá realizar a consulta: ");
+    System.out.print("Informe o paciente que irá realizar a consulta: ");
         String pacienteConsulta = cadastroConsultaScanner.toString();
 
       System.out.print("Informe o médico que irá realizar a consulta:");
