@@ -152,7 +152,7 @@ class CadastraDados {
     System.out.print("Informe o endereço da clinica: ");
       enderecoClinica = cadastroClinicaScanner.toString();
 
-      System.out.print("Informe o telefone da clinica: ");
+    System.out.print("Informe o telefone da clinica: ");
         String telefoneClinica = cadastroClinicaScanner.toString();
 
       cadastroClinicaScanner.close();
