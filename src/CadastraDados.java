@@ -61,6 +61,7 @@ class CadastraDados {
       cadastroAgendaScanner.close();
     };
   
+  String nomePaciente, cpfPaciente, emailPaciente;
   public void cadastrarPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
 
