@@ -91,11 +91,10 @@ class CadastraDados {
     String nomeMedico, cpfMedico, emailMedico;
     public void cadastrarMedico(){
       Scanner cadastroMedicoScanner = new Scanner(System.in);
-
-      String informacoesCadastro;
-      informacoesCadastro = "===================================\n";
-      informacoesCadastro += "       Cadastro de Médico         ";
-      informacoesCadastro += "===================================\n";
+      // String nomeMedico, cpfMedico, emailMedico;
+      System.out.println("===================================");
+      System.out.println("        Cadastro de Médico         ");
+      System.out.println("===================================");
   
       System.out.print("Informe o nome do médico: ");
         String nomeMedico = cadastroMedicoScanner.toString();
