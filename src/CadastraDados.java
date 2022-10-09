@@ -109,8 +109,8 @@ class CadastraDados {
   }
 
   String dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta;
-    public void cadastrarConsulta() {
-      Scanner cadastroConsultaScanner = new Scanner(System.in);
+  public void cadastrarConsulta() {
+    Scanner cadastroConsultaScanner = new Scanner(System.in);
 
       String informacoesCadastro;
       informacoesCadastro = "===================================\n";
