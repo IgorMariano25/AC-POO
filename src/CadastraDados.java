@@ -107,6 +107,8 @@ class CadastraDados {
 
       cadastroMedicoScanner.close(); // fecha o cadastroMedicoScanner, não vai mais consumir memória
   }
+
+  String dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta;
     public void cadastrarConsulta() {
       Scanner cadastroConsultaScanner = new Scanner(System.in);
 
