@@ -11,7 +11,7 @@ public class Agenda {
     private int intervaloConsulta;
     private Clinica clinica;
     private Consulta consultas[];
-    private Consultorio consultorio;
+    // private Consultorio consultorio;
 
     public Agenda(int diaSemana, Clinica clinica, Consultorio consultorio ) {
         this.diaSemana = diaSemana;
@@ -23,7 +23,7 @@ public class Agenda {
         this.intervaloConsulta = 30;
         this.clinica = clinica;
         this.definirHorariosAgendamento();
-        this.consultorio = consultorio;
+        // this.consultorio = consultorio;
     }
 
     public String getClinicaCnpj() {
