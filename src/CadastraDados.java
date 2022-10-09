@@ -166,10 +166,10 @@ class CadastraDados {
     informacoesGeraisDeCadastro += "        INFORMAÇÕES GERAIS DE CADASTRO       ";
     informacoesGeraisDeCadastro += "=============================================\n";
 
-    // exibeInformacoesPaciente();
-    // exibeInformacoesMedico();
-    // exibeInformacoesConsulta();
-    // exibeInformacoesClinica();
+    exibeInformacoesPaciente();
+    exibeInformacoesMedico();
+    exibeInformacoesConsulta();
+    exibeInformacoesClinica();
   }
 
   String informacoesCadastroPaciente;
