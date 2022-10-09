@@ -163,11 +163,38 @@ class CadastraDados {
     // String informacoesGeraisDeCadastro = "";
 
     informacoesGeraisDeCadastro = "==============================================\n";
-    informacoesGeraisDeCadastro += "       INFORMAÇÕES GERAIS DE CADASTRO        ";
+    informacoesGeraisDeCadastro += "        INFORMAÇÕES GERAIS DE CADASTRO       ";
     informacoesGeraisDeCadastro += "=============================================\n";
 
-  return informacoesGeraisDeCadastro;
+    // exibeInformacoesPaciente();
+    // exibeInformacoesMedico();
+    // exibeInformacoesConsulta();
+    // exibeInformacoesClinica();
   }
+
+  String informacoesCadastroPaciente;
+    public void exibeInformacoesPaciente(){
+    System.out.println("===================================");
+    System.out.println("        Cadastro de Paciente       ");
+    System.out.println("===================================");
+
+    informacoesCadastroPaciente += "Nome: " + nomePaciente;
+    informacoesCadastroPaciente += "CPF: " + cpfPaciente;
+    informacoesCadastroPaciente += "E-mail: " + emailPaciente;
+    System.out.println(informacoesCadastroPaciente);
+  }  
+
+  String informacoesCadastroMedico;
+    public void exibeInformacoesMedico(){
+    System.out.println("===================================");
+    System.out.println("        Cadastro de Médico       ");
+    System.out.println("===================================");
+
+    informacoesCadastroMedico += "Nome: " + nomeMedico;
+    informacoesCadastroMedico += "CPF: " + cpfMedico;
+    informacoesCadastroMedico += "E-mail: " + emailMedico;
+    System.out.println(informacoesCadastroMedico);
+    }
 }  
 
   /*
