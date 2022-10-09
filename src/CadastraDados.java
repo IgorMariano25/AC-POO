@@ -88,6 +88,7 @@ class CadastraDados {
     // LocalDate dia = LocalDate.of(2000, 11, 16);
     // paciente.cadastraEndereco(...);
 
+    String nomeMedico, cpfMedico, emailMedico;
     public void cadastrarMedico(){
       Scanner cadastroMedicoScanner = new Scanner(System.in);
 
