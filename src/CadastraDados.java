@@ -118,7 +118,7 @@ class CadastraDados {
     System.out.println( "===================================");
 
     System.out.print("Informe a data da consulta: ");
-        String dataConsulta = cadastroConsultaScanner.toString();
+        dataConsulta = cadastroConsultaScanner.toString();
 
       System.out.print("Informe a hora da consulta: ");
         String horaConsulta = cadastroConsultaScanner.toString();
