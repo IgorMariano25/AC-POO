@@ -64,6 +64,7 @@ class CadastraDados {
   String nomePaciente, cpfPaciente, emailPaciente;
   public void cadastrarPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
+    // String nomePaciente, cpfPaciente, emailPaciente;
 
       System.out.println("===================================");
       System.out.println("        Cadastro de Paciente       ");
