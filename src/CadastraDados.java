@@ -155,8 +155,8 @@ class CadastraDados {
     System.out.print("Informe o telefone da clinica: ");
       telefoneClinica = cadastroClinicaScanner.toString();
 
-      cadastroClinicaScanner.close();
-    }
+    cadastroClinicaScanner.close(); // fecha o cadastroClinicaScanner, não vai mais consumir memória
+  }
 
   private void exibeInfo(){
     String informacoesGeraisDeCadastro = "";
