@@ -77,8 +77,8 @@ class CadastraDados {
         cpfPaciente = cadastroPacienteScanner.toString();
       
       System.out.print("Informe e-mail do paciente: ");
-        String emailPaciente = cadastroPacienteScanner.toString();
-
+        emailPaciente = cadastroPacienteScanner.toString();
+      
       cadastroPacienteScanner.close(); // fecha o notas, não vai mais consumir memória
     };
     
