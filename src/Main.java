@@ -33,19 +33,19 @@ class Main {
           banco.cadastrarMedico();
           break;
         case "4":
-          System.out.println("opção 4: Exibir médicos cadastrados!\n");
+          System.out.println("opção 4: Exibir médicos cadastrados!");
           // banco.exibeInfo();
           break;    
         case "5":
-          System.out.println("opção 5: Cadastrar Agenda!\n");
+          System.out.println("opção 5: Cadastrar Agenda!");
           banco.cadastraAgenda();
           break;
         case "6":
-          System.out.println("opção 6: Cadastrar Consulta!\n");
+          System.out.println("opção 6: Cadastrar Consulta!");
           banco.cadastrarConsulta();
           break;
         case "7":
-          System.out.println("opção 7: Cadastrar Clinica!\n");
+          System.out.println("opção 7: Cadastrar Clinica!");
           banco.cadastrarClinica();
           break;  
         default:
