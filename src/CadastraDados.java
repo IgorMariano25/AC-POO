@@ -195,6 +195,19 @@ class CadastraDados {
     informacoesCadastroMedico += "E-mail: " + emailMedico;
     System.out.println(informacoesCadastroMedico);
     }
+
+  String informacoesCadastroConsulta;
+    public void exibeInformacoesConsulta(){
+    System.out.println("===================================");
+    System.out.println("        Cadastro de Consulta       ");
+    System.out.println("===================================");
+
+    informacoesCadastroConsulta += "Paciente: " + pacienteConsulta ;
+    informacoesCadastroConsulta += "Médico: " + medicoConsulta;
+    informacoesCadastroConsulta += "Data: " + dataConsulta;
+    informacoesCadastroConsulta += "Hora: " + horaConsulta;
+    informacoesCadastroConsulta += "É uma consulta de revisão ? " + revisaoConsulta;
+    System.out.println(informacoesCadastroConsulta);
 }  
 
   /*
