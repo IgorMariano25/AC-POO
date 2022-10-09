@@ -71,7 +71,7 @@ class CadastraDados {
       System.out.println("===================================");
   
       System.out.print("Informe o nome do paciente: ");
-        String nomePaciente = cadastroPacienteScanner.toString();
+        nomePaciente = cadastroPacienteScanner.toString();
 
       System.out.print("Informe o CPF do paciente: ");
         String cpfPaciente = cadastroPacienteScanner.toString();
