@@ -33,7 +33,7 @@ class Main {
           banco.cadastrarMedico();
           break;
         default:
-          System.out.println("Volte sempre!\n");
+          System.out.println("Volte sempre!");
           opcao = "";
         scanner.close();
       }
