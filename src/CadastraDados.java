@@ -112,12 +112,12 @@ class CadastraDados {
   public void cadastrarConsulta() {
     Scanner cadastroConsultaScanner = new Scanner(System.in);
 
-      String informacoesCadastro;
-      informacoesCadastro = "===================================\n";
-      informacoesCadastro += "       Cadastro de Consulta        ";
-      informacoesCadastro += "===================================\n";
-  
-      System.out.print("Informe a data da consulta: ");
+    // String dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta;
+    System.out.println( "===================================");
+    System.out.println( "        Cadastro de Consulta       ");
+    System.out.println( "===================================");
+
+    System.out.print("Informe a data da consulta: ");
         String dataConsulta = cadastroConsultaScanner.toString();
 
       System.out.print("Informe a hora da consulta: ");
