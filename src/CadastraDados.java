@@ -105,7 +105,7 @@ class CadastraDados {
       System.out.print("Informe e-mail do médico: ");
          emailMedico = cadastroMedicoScanner.toString();
 
-      cadastroMedicoScanner.close();
+      cadastroMedicoScanner.close(); // fecha o cadastroMedicoScanner, não vai mais consumir memória
   }
     public void cadastrarConsulta() {
       Scanner cadastroConsultaScanner = new Scanner(System.in);
