@@ -1,3 +1,4 @@
+// import java.time.LocalDate;
 import java.util.Scanner;
 
 class Main {
@@ -21,13 +22,15 @@ class Main {
       switch (opcao) {
         case "1":
           banco.cadastrarPaciente();
-          System.out.println("opção 1!\n");
+          System.out.println("opção 1: Cadastrar paciente!\n");
           break;
         case "2":
-          System.out.println("opção 2!\n");
+          // banco.exibeInfo();
+          System.out.println("opção 2: Exibir pacientes cadastrados!\n");
           break;
         case "3":
-          System.out.println("opção 3!\n");
+          banco.cadastrarMedico();
+          System.out.println("opção 3: Cadastrar médico!\n");
           break;
         default:
           System.out.println("Volte sempre!\n");
@@ -35,5 +38,12 @@ class Main {
         scanner.close();
       }
     }
+    //testes
+
+    //Emição de nota de cobrança:
+    // Paciente paciente1 = new Paciente("José", "1234", "email_real@gmail.com", LocalDate.of(1958, 8, 25));
+    // Medico medico1 = new Medico("Aurélio", "98765", "email_de_medico@yahoo.com", "65651", "ortopedista");
+    // Consulta exibe = new Consulta(true, paciente1, medico1);
+    // System.out.println("opção 4: Emitir nota de cobrança!"+ "\n" + exibe.emitirNotaCobranca());
   }
 }
