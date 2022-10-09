@@ -135,6 +135,7 @@ class CadastraDados {
     cadastroConsultaScanner.close(); // fecha o cadastroConsultaScanner, não vai mais consumir memória
   }
 
+  String nomeClinica, cnpjClinica, enderecoClinica, telefoneClinica;
     public void cadastrarClinica() {
       Scanner cadastroClinicaScanner = new Scanner(System.in);
 
