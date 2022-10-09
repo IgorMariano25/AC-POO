@@ -35,6 +35,7 @@ public abstract class Paciente extends Pessoa {
         msg += "CPF: " + this.cpf + "\n";
         msg += "Telefones:" + "\n";
         msg += "Plano de Saúde: " + this.plano;
+        msg += "Endereço: " + this.endereco;
         msg += this.listaTelefones();
         System.out.println(msg);
     }
