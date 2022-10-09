@@ -158,8 +158,9 @@ class CadastraDados {
     cadastroClinicaScanner.close(); // fecha o cadastroClinicaScanner, não vai mais consumir memória
   }
 
-  private void exibeInfo(){
-    String informacoesGeraisDeCadastro = "";
+  String informacoesGeraisDeCadastro;
+  public void exibeInformacoesGerais(){
+    // String informacoesGeraisDeCadastro = "";
 
     informacoesGeraisDeCadastro = "==============================================\n";
     informacoesGeraisDeCadastro += "       INFORMAÇÕES GERAIS DE CADASTRO        ";
