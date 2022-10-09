@@ -20,6 +20,8 @@ class CadastraDados {
     return 0;
   }
 
+  String horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, consultorioAgenda;
+  Integer intervaloAgenda, converteDiaSemana;
   public void cadastraAgenda() {
     Scanner cadastroAgendaScanner = new Scanner(System.in);
 
