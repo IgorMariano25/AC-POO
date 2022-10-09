@@ -123,8 +123,8 @@ class CadastraDados {
     System.out.print("Informe a hora da consulta: ");
         horaConsulta = cadastroConsultaScanner.toString();
     
-      System.out.print("Informe se a consulta é revisão: ");
-        String revisaoConsulta = cadastroConsultaScanner.toString();
+    System.out.print("Informe se a consulta é revisão (Sim/Não): ");
+        revisaoConsulta = cadastroConsultaScanner.toString();
 
       System.out.print("Informe o paciente que irá realizar a consulta: ");
         String pacienteConsulta = cadastroConsultaScanner.toString();
