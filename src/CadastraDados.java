@@ -21,7 +21,8 @@ class CadastraDados {
   }
 
   String horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, consultorioAgenda;
-  Integer intervaloAgenda, converteDiaSemana;
+  String intervaloAgenda;
+  Integer converteDiaSemana;
   public void cadastraAgenda() {
     Scanner cadastroAgendaScanner = new Scanner(System.in);
       // String horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, consultorioAgenda;
@@ -41,22 +42,22 @@ class CadastraDados {
         converteDiaSemana = cadastroAgendaScanner.nextInt();
 
       System.out.println("Informe o horário de início da consulta: ");
-       horarioInicioAgenda =  cadastroAgendaScanner.toString();
+       horarioInicioAgenda =  cadastroAgendaScanner.nextLine();
 
       System.out.println("Informe o horário de fim da consulta: ");
-        horarioFimAgenda = cadastroAgendaScanner.toString();  
+        horarioFimAgenda = cadastroAgendaScanner.nextLine();  
       
       System.out.println("Informe o último dia que houve uma consulta: ");
-        intervaloAgenda = cadastroAgendaScanner.nextInt();
+        intervaloAgenda = cadastroAgendaScanner.nextLine();
 
       System.out.println("Informe o médico que irá realizar a consulta: ");
-        medicoAgenda = cadastroAgendaScanner.toString();
+        medicoAgenda = cadastroAgendaScanner.nextLine();
         
       System.out.println("Informe a clinica que deve ocorrer a consulta: ");
-        clinicaAgenda = cadastroAgendaScanner.toString();
+        clinicaAgenda = cadastroAgendaScanner.nextLine();
 
       System.out.println("Informe o consultorio : ");
-        consultorioAgenda = cadastroAgendaScanner.toString();
+        consultorioAgenda = cadastroAgendaScanner.nextLine();
 
       cadastroAgendaScanner.close();
     };
@@ -71,13 +72,13 @@ class CadastraDados {
       System.out.println("===================================");
   
       System.out.println("Informe o nome do paciente: ");
-        nomePaciente = cadastroPacienteScanner.toString();
+        nomePaciente = cadastroPacienteScanner.nextLine();
 
       System.out.println("Informe o CPF do paciente: ");
-        cpfPaciente = cadastroPacienteScanner.toString();
+        cpfPaciente = cadastroPacienteScanner.nextLine();
       
       System.out.println("Informe e-mail do paciente: ");
-        emailPaciente = cadastroPacienteScanner.toString();
+        emailPaciente = cadastroPacienteScanner.nextLine();
       
       cadastroPacienteScanner.close(); // fecha o cadastroPacienteScanner, não vai mais consumir memória
     };
@@ -97,13 +98,13 @@ class CadastraDados {
       System.out.println("===================================");
   
       System.out.println("Informe o nome do médico: ");
-       nomeMedico = cadastroMedicoScanner.toString();
+       nomeMedico = cadastroMedicoScanner.nextLine();
 
       System.out.println("Informe o CPF do médico: ");
-        cpfMedico = cadastroMedicoScanner.toString();
+        cpfMedico = cadastroMedicoScanner.nextLine();
       
       System.out.println("Informe e-mail do médico: ");
-         emailMedico = cadastroMedicoScanner.toString();
+         emailMedico = cadastroMedicoScanner.nextLine();
 
       cadastroMedicoScanner.close(); // fecha o cadastroMedicoScanner, não vai mais consumir memória
   }
@@ -118,19 +119,19 @@ class CadastraDados {
     System.out.println( "===================================");
 
     System.out.println("Informe a data da consulta: ");
-        dataConsulta = cadastroConsultaScanner.toString();
+        dataConsulta = cadastroConsultaScanner.nextLine();
 
     System.out.println("Informe a hora da consulta: ");
-        horaConsulta = cadastroConsultaScanner.toString();
+        horaConsulta = cadastroConsultaScanner.nextLine();
     
     System.out.println("Informe se a consulta é revisão (Sim/Não): ");
-        revisaoConsulta = cadastroConsultaScanner.toString();
+        revisaoConsulta = cadastroConsultaScanner.nextLine();
 
     System.out.println("Informe o paciente que irá realizar a consulta: ");
-        pacienteConsulta = cadastroConsultaScanner.toString();
+        pacienteConsulta = cadastroConsultaScanner.nextLine();
 
     System.out.println("Informe o médico que irá realizar a consulta:");
-        medicoConsulta = cadastroConsultaScanner.toString();
+        medicoConsulta = cadastroConsultaScanner.nextLine();
 
     cadastroConsultaScanner.close(); // fecha o cadastroConsultaScanner, não vai mais consumir memória
   }
@@ -144,16 +145,16 @@ class CadastraDados {
     System.out.println("===================================");
 
     System.out.println("Informe o nome da clinica: ");
-      nomeClinica = cadastroClinicaScanner.toString();
+      nomeClinica = cadastroClinicaScanner.nextLine();
 
     System.out.println("Informe o cnpj da clinica: ");
-      cnpjClinica = cadastroClinicaScanner.toString();
+      cnpjClinica = cadastroClinicaScanner.nextLine();
     
     System.out.println("Informe o endereço da clinica: ");
-      enderecoClinica = cadastroClinicaScanner.toString();
+      enderecoClinica = cadastroClinicaScanner.nextLine();
 
     System.out.println("Informe o telefone da clinica: ");
-      telefoneClinica = cadastroClinicaScanner.toString();
+      telefoneClinica = cadastroClinicaScanner.nextLine();
 
     cadastroClinicaScanner.close(); // fecha o cadastroClinicaScanner, não vai mais consumir memória
   }
