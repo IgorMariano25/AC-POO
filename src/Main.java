@@ -13,7 +13,7 @@ class Main {
     menu += "1 - Cadastrar paciente;\n";
     menu += "2 - Exibir pacientes cadastrados;\n";
     menu += "3 - Cadastrar médico;\n";
-    menu += "Qualquer outra tecla - Sair do programa;\n";
+    menu += "Qualquer outra tecla - Sair do programa\n;";
     opcao = "-";
 
     while ( opcao != "" ) {
@@ -21,15 +21,15 @@ class Main {
       opcao = scanner.nextLine();
       switch (opcao) {
         case "1":
-          System.out.println("opção 1: Cadastrar paciente!\n");
+          System.out.println("opção 1: Cadastrar paciente!");
           banco.cadastrarPaciente();
           break;
         case "2":
-          System.out.println("opção 2: Exibir pacientes cadastrados!\n");
+          System.out.println("opção 2: Exibir pacientes cadastrados!");
           // banco.exibeInfo();
           break;
         case "3":
-          System.out.println("opção 3: Cadastrar médico!\n");
+          System.out.println("opção 3: Cadastrar médico!");
           banco.cadastrarMedico();
           break;
         default:
