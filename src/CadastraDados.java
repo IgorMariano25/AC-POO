@@ -146,7 +146,7 @@ class CadastraDados {
     System.out.print("Informe o nome da clinica: ");
       nomeClinica = cadastroClinicaScanner.toString();
 
-      System.out.print("Informe o cnpj da clinica: ");
+    System.out.print("Informe o cnpj da clinica: ");
         String cnpjClinica = cadastroClinicaScanner.toString();
       
       System.out.print("Informe o endereço da clinica: ");
