@@ -210,6 +210,19 @@ class CadastraDados {
     System.out.println(informacoesCadastroConsulta);
 }  
 
+    String informacoesCadastroClinica;
+    public void exibeInformacoesClinica(){
+    System.out.println("===================================");
+    System.out.println("        Cadastro de Clinica        ");
+    System.out.println("===================================");
+
+    informacoesCadastroClinica += "Nome: " + nomeClinica  ;
+    informacoesCadastroClinica += "CNPJ: " + cnpjClinica ;
+    informacoesCadastroClinica += "Endereco: " + enderecoClinica;
+    informacoesCadastroClinica += "Telefone: " + telefoneClinica;
+    System.out.println(informacoesCadastroClinica);
+    }
+}
   /*
   1 - fulano - cardiologia
   2 - beltrano - oftalmologia
