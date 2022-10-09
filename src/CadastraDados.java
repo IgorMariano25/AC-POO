@@ -65,10 +65,9 @@ class CadastraDados {
   public void cadastrarPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
 
-      String informacoesCadastro;
-      informacoesCadastro = "===================================\n";
-      informacoesCadastro += "       Cadastro de Paciente       ";
-      informacoesCadastro += "===================================\n";
+      System.out.println("===================================");
+      System.out.println("        Cadastro de Paciente       ");
+      System.out.println("===================================");
   
       System.out.print("Informe o nome do paciente: ");
         String nomePaciente = cadastroPacienteScanner.toString();
