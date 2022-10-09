@@ -132,8 +132,8 @@ class CadastraDados {
     System.out.print("Informe o médico que irá realizar a consulta:");
         medicoConsulta = cadastroConsultaScanner.toString();
 
-      cadastroConsultaScanner.close();
-    }
+    cadastroConsultaScanner.close(); // fecha o cadastroConsultaScanner, não vai mais consumir memória
+  }
 
     public void cadastrarClinica() {
       Scanner cadastroClinicaScanner = new Scanner(System.in);
