@@ -24,11 +24,11 @@ class CadastraDados {
   Integer intervaloAgenda, converteDiaSemana;
   public void cadastraAgenda() {
     Scanner cadastroAgendaScanner = new Scanner(System.in);
-
-      String informacoesCadastro;
-      informacoesCadastro = "===================================\n";
-      informacoesCadastro += "       cadastro de Agenda         ";
-      informacoesCadastro += "===================================\n";
+      // String horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, consultorioAgenda;
+      // Integer intervaloAgenda, converteDiaSemana;
+      System.out.println("===================================");
+      System.out.println("        cadastro de Agenda         ");
+      System.out.println("===================================");
   
       System.out.print("Informe o dia da semana da consulta: ");
         System.out.print("1 - Domingo");
