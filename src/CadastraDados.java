@@ -79,7 +79,7 @@ class CadastraDados {
       System.out.print("Informe e-mail do paciente: ");
         emailPaciente = cadastroPacienteScanner.toString();
       
-      cadastroPacienteScanner.close(); // fecha o notas, não vai mais consumir memória
+      cadastroPacienteScanner.close(); // fecha o cadastroPacienteScanner, não vai mais consumir memória
     };
     
     public void cadastrarEndereco(){
