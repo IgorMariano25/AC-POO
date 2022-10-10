@@ -11,8 +11,9 @@ public class Agenda {
     private int intervaloConsulta;
     private Clinica clinica;
     private Consulta consultas[];
+    // private Consultorio consultorio;
 
-    public Agenda(int diaSemana, Clinica clinica) {
+    public Agenda(int diaSemana, Clinica clinica, Consultorio consultorio ) {
         this.diaSemana = diaSemana;
         // Objeto LocalTime possui método of(), que define um horário em
         // horas e minutos
@@ -22,6 +23,7 @@ public class Agenda {
         this.intervaloConsulta = 30;
         this.clinica = clinica;
         this.definirHorariosAgendamento();
+        // this.consultorio = consultorio;
     }
 
     public String getClinicaCnpj() {

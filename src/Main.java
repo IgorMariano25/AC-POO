@@ -1,3 +1,4 @@
+// import java.time.LocalDate;
 import java.util.Scanner;
 
 class Main {
@@ -12,7 +13,7 @@ class Main {
     menu += "1 - Cadastrar paciente;\n";
     menu += "2 - Exibir pacientes cadastrados;\n";
     menu += "3 - Cadastrar médico;\n";
-    menu += "Qualquer outra tecla - Sair do programa;\n";
+    menu += "Qualquer outra tecla - Sair do programa\n;";
     opcao = "-";
 
     while ( opcao != "" ) {
@@ -20,19 +21,45 @@ class Main {
       opcao = scanner.nextLine();
       switch (opcao) {
         case "1":
-          banco.cadastraPaciente();
-          System.out.println("opção 1!\n");
+          System.out.println("opção 1: Cadastrar paciente!");
+          banco.cadastrarPaciente();
           break;
         case "2":
-          System.out.println("opção 2!\n");
+          System.out.println("opção 2: Exibir pacientes cadastrados!");
+          // banco.exibeInfo();
           break;
         case "3":
-          System.out.println("opção 3!\n");
+          System.out.println("opção 3: Cadastrar médico!");
+          banco.cadastrarMedico();
           break;
+        case "4":
+          System.out.println("opção 4: Exibir médicos cadastrados!");
+          // banco.exibeInfo();
+          break;    
+        case "5":
+          System.out.println("opção 5: Cadastrar Agenda!");
+          banco.cadastraAgenda();
+          break;
+        case "6":
+          System.out.println("opção 6: Cadastrar Consulta!");
+          banco.cadastrarConsulta();
+          break;
+        case "7":
+          System.out.println("opção 7: Cadastrar Clinica!");
+          banco.cadastrarClinica();
+          break;  
         default:
-          System.out.println("Volte sempre!\n");
+          System.out.println("Volte sempre!");
           opcao = "";
+        scanner.close();
       }
     }
+    //testes
+
+    //Emição de nota de cobrança:
+    // Paciente paciente1 = new Paciente("José", "1234", "email_real@gmail.com", LocalDate.of(1958, 8, 25));
+    // Medico medico1 = new Medico("Aurélio", "98765", "email_de_medico@yahoo.com", "65651", "ortopedista");
+    // Consulta exibe = new Consulta(true, paciente1, medico1);
+    // System.out.println("opção 4: Emitir nota de cobrança!"+ "\n" + exibe.emitirNotaCobranca());
   }
 }

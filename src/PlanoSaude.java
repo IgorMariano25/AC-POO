@@ -6,4 +6,12 @@ public class PlanoSaude {
         this.nome = nome;
         this.limiteConsultasMes = limiteConsultasMes;
     }
+
+    public void exibeInfo() {
+        String informaçoesPlanoSaude = "";
+
+        informaçoesPlanoSaude = "Nome: " + this.nome;
+        informaçoesPlanoSaude = "Limite de consultas do plano: " + this.limiteConsultasMes;
+        System.out.println(informaçoesPlanoSaude);
+    }
 }

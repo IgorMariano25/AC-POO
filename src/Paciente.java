@@ -21,15 +21,21 @@ public abstract class Paciente extends Pessoa {
         this.endereco = new Endereco(logradouro, numero, complemento, bairro, cep, cidade, uf);
     }
 
+    public boolean getPlanoParticular() {
+        return this.planoParticular;
+    }
+
     @Override
     public void exibeInfo() {
         String msg = "";
 
-        msg += this.nome + "\n";
+        msg += "Nome: " + this.nome + "\n";
         msg += "Data de nascimento: " + this.dataNascimento + "\n";
-        msg += this.eMail + "\n";
+        msg += "E-mail: " + this.eMail + "\n";
         msg += "CPF: " + this.cpf + "\n";
         msg += "Telefones:" + "\n";
+        msg += "Plano de Saúde: " + this.plano;
+        msg += "Endereço: " + this.endereco;
         msg += this.listaTelefones();
         System.out.println(msg);
     }

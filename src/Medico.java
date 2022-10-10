@@ -3,6 +3,7 @@ public class Medico extends Pessoa {
     private String especialidade;
     private Agenda agendas[];
     private int agendasOcupadas;
+    private Consultorio consultorio;
 
     public Medico(String nome, String cpf, String eMail, String crm, String especialidade) {
         super(nome, cpf, eMail);
@@ -30,7 +31,7 @@ public class Medico extends Pessoa {
             this.agendasOcupadas = 0;
         }
 
-        agendas[this.agendasOcupadas] = new Agenda(diaSemana, clinica);
+        agendas[this.agendasOcupadas] = new Agenda(diaSemana, clinica, consultorio);
         this.agendasOcupadas += 1;
     }
 
