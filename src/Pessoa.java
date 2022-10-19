@@ -41,3 +41,6 @@ public abstract class Pessoa {
 
     public abstract void exibeInfo();
 }
+
+    // TODO: Implementar método hashCode e Equals
+    // TODO: Organizar exibição de mensagens para o usuário
