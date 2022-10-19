@@ -7,6 +7,10 @@ class CadastraDados {
   Clinica clinica[];
 
   CadastraDados() {
+    // TODO: Armarzenar dados de input no Arry pacientes, Medicos Agenda, Consulta, Clinica
+    // TODO: Devover informaçõs de input
+    // TODO: Exibir mnsagem de erro, caso a informação buscada não exista
+    // TODO: Verificar o melhor tipo de Arry para ser aplicado
     pacientes = new Paciente[5];
     medicos = new Medico[5];
     agendas = new Agenda[20];
