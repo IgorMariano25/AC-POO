@@ -6,6 +6,26 @@ class CadastraDados {
   Agenda agendas[];
   Clinica clinica[];
 
+// Critérios de pontuçaõ de acordo com o professor Victor Machado
+  // --> TODO: Armarzenar dados de input no Arry pacientes, Medicos Agenda, Consulta, Clinica
+  // --> TODO: Devover informaçõs de input
+  // --> TODO: Exibir mnsagem de erro, caso a informação buscada não exista
+  // --> TODO: Verificar o melhor tipo de Arry para ser aplicado
+  // --> TODO: Organizar exibição de mensagens para o usuário
+  // --> TODO: Sistema permite exibir Pacientes
+  // --> TODO: Sistema permite exibir Medicos
+  // --> TODO: Sistema permite exibir Agendas
+  // --> TODO: Sistema permite exibir Consultas
+  // --> TODO: Código de interface estár organizado entre Main e CadastraDados
+  // --> TODO: Classe Consultório foi impelmentada confrome o modelo UML
+  // --> TODO: Classe consultório foi implementada, sem acoplamentes ou redundâncias
+  // --> TODO: Representação da classe consultorio foi incluída corretamente no modelo UML
+  // --> TODO: Representação do método emitirNota() foi incluida corretamente no modelo UML, classe conslutório
+  // --> TODO: Método emitirNota() - gera cobrança de R$ 400
+  // --> TODO: Método emitirNota() - gera cobrança R$ 200 para a primeira consulta
+  // --> TODO: Método emitirNota() - gera cobrança R$ 100 para plano de saúde
+  // --> TODO: Método emitirNota() - cobranças atendem às regras de negócios definidas
+      
   CadastraDados() {
     // TODO: Armarzenar dados de input no Arry pacientes, Medicos Agenda, Consulta, Clinica
     // TODO: Devover informaçõs de input
