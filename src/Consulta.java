@@ -80,4 +80,6 @@ public class Consulta {
                "Dia: " + this.data.format(df) + "\n" +
                "Às: " + this.hora.format(tf);
     }
+
+    // TODO: Implementar método hashCode e Equals
 }
