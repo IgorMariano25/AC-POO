@@ -12,3 +12,6 @@ public class Telefone {
         return this.tipo + " - " + this.numero;
     }
 }
+
+    // TODO: Implementar método hashCode e Equals
+    // TODO: Organizar exibição de mensagens para o usuário
