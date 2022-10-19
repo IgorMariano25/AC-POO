@@ -62,4 +62,6 @@ class Main {
     // Consulta exibe = new Consulta(true, paciente1, medico1);
     // System.out.println("opção 4: Emitir nota de cobrança!"+ "\n" + exibe.emitirNotaCobranca());
   }
-}
+
+    //TODO: Testar a interface 
+    //TODO: Realizar teste de cobrança
