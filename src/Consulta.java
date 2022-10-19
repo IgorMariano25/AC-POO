@@ -18,6 +18,7 @@ public class Consulta {
     public boolean marcarConsulta(LocalDate dia, LocalTime horario, Clinica clinica) {
         Agenda agendas[] = this.medico.getAgendas();
 
+        // TODO: Revisar ifs
         for (Agenda agenda : agendas) {
             if (agenda.getClinicaCnpj() == clinica.getCnpj()) {
                 if (agenda.agendarHorario(dia, horario, this)) {
@@ -53,24 +54,6 @@ public class Consulta {
             }
         return valorCobranca;
     }
-
-        // switch (valorCobranca) {
-        //     case :
-        //         banco.cadastraPaciente();
-        //         System.out.("opção 1!\n");
-        //         break;
-        //     case "2":
-        //         System.out.println("opção 2!\n");
-        //         break;
-        //     case "3":
-        //         System.out.println("opção 3!\n");
-        //         break;
-        //     default:
-        //         System.out.println("Volte sempre!\n");
-        //         opcao = "";
-        //     return
-        // }
-        
     @Override
     public String toString() {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -80,6 +63,6 @@ public class Consulta {
                "Dia: " + this.data.format(df) + "\n" +
                "Às: " + this.hora.format(tf);
     }
-
-    // TODO: Implementar método hashCode e Equals
 }
+// TODO: Implementar método hashCode e Equals
+// TODO: Organizar exibição de mensagens para o usuário
