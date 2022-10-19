@@ -24,7 +24,7 @@ public class Agenda {
         this.intervaloConsulta = 30;
         this.clinica = clinica;
         this.definirHorariosAgendamento();
-        // this.consultorio = consultorio;
+        this.consultorio = consultorio;
     }
 
     public String getClinicaCnpj() {
