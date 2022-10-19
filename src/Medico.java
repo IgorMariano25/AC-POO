@@ -46,3 +46,6 @@ public class Medico extends Pessoa {
         }
     }
 }
+
+    // TODO: Implementar método hashCode e Equals
+    // TODO: Organizar exibição de mensagens para o usuário
