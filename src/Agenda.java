@@ -101,9 +101,12 @@ public class Agenda {
     // Objeto DateTimeFormatter formata objetos de tempo e data para String
     // https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
     @Override
+    // TODO: Organizar exibição de mensagens para o usuário
     public String toString() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("hh:mm");
         return this.clinica.getNome() + " - " + this.converteDiaSemana() +
                ": " + this.horaInicio.format(dtf) + " - " + this.horaFim.format(dtf);
     }
 }
+// TODO: Implementar método hashCode e Equals
+// TODO: Organizar exibição de mensagens para o usuário
