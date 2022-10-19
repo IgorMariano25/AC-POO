@@ -45,7 +45,7 @@ class CadastraDados {
     // TODO: Método emitirNota() - gera cobrança R$ 200 para a primeira consulta
     // TODO: Método emitirNota() - gera cobrança R$ 100 para plano de saúde
     // TODO: Método emitirNota() - cobranças atendem às regras de negócios definidas
-    pacientes = new Paciente[5];
+    pacientes = new Paciente[5]; 
     medicos = new Medico[5];
     agendas = new Agenda[20];
     consultas = new Consulta[20];
@@ -63,8 +63,6 @@ class CadastraDados {
   Integer converteDiaSemana;
   public void cadastraAgenda() {
     Scanner cadastroAgendaScanner = new Scanner(System.in);
-      // String horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, consultorioAgenda;
-      // Integer intervaloAgenda, converteDiaSemana;
       System.out.println("===================================");
       System.out.println("        cadastro de Agenda         ");
       System.out.println("===================================");
@@ -103,8 +101,6 @@ class CadastraDados {
   String nomePaciente, cpfPaciente, emailPaciente;
   public void cadastrarPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
-    // String nomePaciente, cpfPaciente, emailPaciente;
-
       System.out.println("===================================");
       System.out.println("        Cadastro de Paciente       ");
       System.out.println("===================================");
@@ -130,7 +126,6 @@ class CadastraDados {
     String nomeMedico, cpfMedico, emailMedico;
     public void cadastrarMedico(){
       Scanner cadastroMedicoScanner = new Scanner(System.in);
-      // String nomeMedico, cpfMedico, emailMedico;
       System.out.println("===================================");
       System.out.println("        Cadastro de Médico         ");
       System.out.println("===================================");
@@ -150,8 +145,6 @@ class CadastraDados {
   String dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta;
   public void cadastrarConsulta() {
     Scanner cadastroConsultaScanner = new Scanner(System.in);
-
-    // String dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta;
     System.out.println( "===================================");
     System.out.println( "        Cadastro de Consulta       ");
     System.out.println( "===================================");
@@ -177,7 +170,6 @@ class CadastraDados {
   String nomeClinica, cnpjClinica, enderecoClinica, telefoneClinica;
   public void cadastrarClinica() {
     Scanner cadastroClinicaScanner = new Scanner(System.in);
-    // String nomeClinica, cnpjClinica, enderecoClinica, telefoneClinica;
     System.out.println("===================================");
     System.out.println("        Cadastro de Clinica        ");
     System.out.println("===================================");
@@ -199,8 +191,6 @@ class CadastraDados {
 
   String informacoesGeraisDeCadastro;
   public void exibeInformacoesGerais(){
-    // String informacoesGeraisDeCadastro = "";
-
     informacoesGeraisDeCadastro = "==============================================\n";
     informacoesGeraisDeCadastro += "        INFORMAÇÕES GERAIS DE CADASTRO       ";
     informacoesGeraisDeCadastro += "=============================================\n";
