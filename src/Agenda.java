@@ -11,7 +11,7 @@ public class Agenda {
     private int intervaloConsulta;
     private Clinica clinica;
     private Consulta consultas[];
-    //TODO: Adicionar método getCOnsultorio()
+    //TODO: Adicionar método getConsultorio()
     private Consultorio consultorio;
 
     public Agenda(int diaSemana, Clinica clinica, Consultorio consultorio ) {
