@@ -214,6 +214,24 @@ class CadastraDados {
     informacoesCadastroClinica += "Telefone: " + telefoneClinica;
     System.out.println(informacoesCadastroClinica);
     }
+
+    // TODO: Fazer lógica do método equals
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof CadastraDados)) {
+            return false;
+        }
+        CadastraDados cadastraDados = (CadastraDados) o;
+        return
+        Objects.equals(cpfPaciente, cadastraDados.cpfPaciente) && 
+        Objects.equals(cpfMedico, cadastraDados.cpfMedico) && 
+        Objects.equals(dataConsulta, cadastraDados.dataConsulta) && 
+        Objects.equals(horaConsulta, cadastraDados.horaConsulta) &&
+        Objects.equals(pacienteConsulta, cadastraDados.pacienteConsulta) && 
+        Objects.equals(medicoConsulta, cadastraDados.medicoConsulta);
+  }
 }
   /*
   1 - fulano - cardiologia
