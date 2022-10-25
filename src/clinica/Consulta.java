@@ -1,6 +1,10 @@
+package clinica;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+
+import pessoas.Medico;
+import pessoas.Paciente;
 public class Consulta {
     private LocalDate data;
     private LocalTime hora;

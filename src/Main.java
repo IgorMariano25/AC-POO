@@ -1,6 +1,8 @@
 // import java.time.LocalDate;
 import java.util.Scanner;
 
+import util.CadastraDados;
+
 // Critérios de pontuçaõ de acordo com o professor Victor Machado
   // --> TODO: Verificar se as variáveis e métodos foram bem nomeados (Uso de camelCase, nomes claros, etc...)
   // --> TODO: Verificar se as classes e métodos foram bem nomeados (Uso de camelCase, nomes claros, etc...)

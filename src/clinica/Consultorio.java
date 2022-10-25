@@ -1,3 +1,7 @@
+package clinica;
+import util.Telefone;
+
+
 public class Consultorio extends Clinica {
     private String unidade;
     private Telefone[] telefones;

@@ -1,3 +1,4 @@
+package util;
 public class Telefone {
     private String numero;
     private String tipo;
