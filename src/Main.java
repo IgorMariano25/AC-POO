@@ -51,6 +51,8 @@ class Main {
     menu += "1 - Cadastrar paciente;\n";
     menu += "2 - Exibir pacientes cadastrados;\n";
     menu += "3 - Cadastrar médico;\n";
+    menu += "4 - Cadastrar paciente;\n";
+    menu += "5 - Cadastrar clinica;\n";
     menu += "Qualquer outra tecla - Sair do programa\n;";
     opcao = "-";
 
