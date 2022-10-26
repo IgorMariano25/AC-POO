@@ -48,10 +48,12 @@ class Main {
     
     menu = "\nSistema de agendamento de consultas\n";
     menu += "Informe a opção desejada:\n";
-    menu += "1 - Cadastrar paciente;\n";
-    menu += "2 - Exibir pacientes cadastrados;\n";
-    menu += "3 - Cadastrar médico;\n";
-    menu += "Qualquer outra tecla - Sair do programa\n;";
+    menu += "1 - Cadastrar paciente\n";
+    menu += "2 - Exibir pacientes cadastrados\n";
+    menu += "3 - Cadastrar médico\n";
+    menu += "4 - Cadastrar paciente\n";
+    menu += "5 - Cadastrar clinica\n";
+    menu += "Qualquer outra tecla - Sair do programa\n";
     opcao = "-";
 
     while ( opcao != "" ) {
@@ -93,11 +95,12 @@ class Main {
         }
       }
     }
+  }
 
-    static void testaInterface() {
-      Exame[] exames = new Exame[5];
-    }
-}
+//     static void testaInterface() {
+//       Exame[] exames = new Exame[5];
+//     }
+// }
 
     //Emição de nota de cobrança:
     // Paciente paciente1 = new Paciente("José", "1234", "email_real@gmail.com", LocalDate.of(1958, 8, 25));

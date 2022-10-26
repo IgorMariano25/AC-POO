@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import clinica.Endereco;
 import util.PlanoSaude;
 
-public abstract class Paciente extends Pessoa {
+public class Paciente extends Pessoa {
     private LocalDate dataNascimento;
     private boolean planoParticular;
     private PlanoSaude plano;

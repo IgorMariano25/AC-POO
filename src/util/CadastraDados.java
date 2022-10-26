@@ -1,4 +1,5 @@
 package util;
+
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -14,11 +15,11 @@ public class CadastraDados {
   Agenda agendas[];
   Clinica clinica[];
 
-  CadastraDados() {
+  public CadastraDados() {
     pacientes = new Paciente[5]; 
     medicos = new Medico[5];
-    agendas = new Agenda[20];   
-    consultas = new Consulta[20]; 
+    agendas = new Agenda[20];
+    consultas = new Consulta[20];
     clinica = new Clinica[1]; 
   }
 
@@ -47,22 +48,22 @@ public class CadastraDados {
         System.out.print("7 - Sábado");
         converteDiaSemana = cadastroAgendaScanner.nextInt();
 
-      System.out.println("Informe o horário de início da consulta: ");
+      System.out.print("Informe o horário de início da consulta: ");
        horarioInicioAgenda =  cadastroAgendaScanner.nextLine();
 
-      System.out.println("Informe o horário de fim da consulta: ");
+      System.out.print("Informe o horário de fim da consulta: ");
         horarioFimAgenda = cadastroAgendaScanner.nextLine();  
       
-      System.out.println("Informe o último dia que houve uma consulta: ");
+      System.out.print("Informe o último dia que houve uma consulta: ");
         intervaloAgenda = cadastroAgendaScanner.nextLine();
 
-      System.out.println("Informe o médico que irá realizar a consulta: ");
+      System.out.print("Informe o médico que irá realizar a consulta: ");
         medicoAgenda = cadastroAgendaScanner.nextLine();
         
-      System.out.println("Informe a clinica que deve ocorrer a consulta: ");
+      System.out.print("Informe a clinica que deve ocorrer a consulta: ");
         clinicaAgenda = cadastroAgendaScanner.nextLine();
 
-      System.out.println("Informe o consultorio : ");
+      System.out.print("Informe o consultorio : ");
         consultorioAgenda = cadastroAgendaScanner.nextLine();
 
       cadastroAgendaScanner.close();
@@ -75,14 +76,16 @@ public class CadastraDados {
       System.out.println("        Cadastro de Paciente       ");
       System.out.println("===================================");
   
-      System.out.println("Informe o nome do paciente: ");
+      System.out.print("Informe o nome do paciente: ");
         nomePaciente = cadastroPacienteScanner.nextLine();
 
-      System.out.println("Informe o CPF do paciente: ");
+      System.out.print("Informe o CPF do paciente: ");
         cpfPaciente = cadastroPacienteScanner.nextLine();
       
-      System.out.println("Informe e-mail do paciente: ");
+      System.out.print("Informe e-mail do paciente: ");
         emailPaciente = cadastroPacienteScanner.nextLine();
+
+        Paciente paciente = new Paciente(nomePaciente, cpfPaciente, emailPaciente, );
       
       cadastroPacienteScanner.close(); // fecha o cadastroPacienteScanner, não vai mais consumir memória
     };
@@ -100,13 +103,13 @@ public class CadastraDados {
       System.out.println("        Cadastro de Médico         ");
       System.out.println("===================================");
   
-      System.out.println("Informe o nome do médico: ");
+      System.out.print("Informe o nome do médico: ");
        nomeMedico = cadastroMedicoScanner.nextLine();
 
-      System.out.println("Informe o CPF do médico: ");
+      System.out.print("Informe o CPF do médico: ");
         cpfMedico = cadastroMedicoScanner.nextLine();
       
-      System.out.println("Informe e-mail do médico: ");
+      System.out.print("Informe e-mail do médico: ");
          emailMedico = cadastroMedicoScanner.nextLine();
 
       cadastroMedicoScanner.close(); // fecha o cadastroMedicoScanner, não vai mais consumir memória
@@ -119,19 +122,19 @@ public class CadastraDados {
     System.out.println( "        Cadastro de Consulta       ");
     System.out.println( "===================================");
 
-    System.out.println("Informe a data da consulta: ");
+    System.out.print("Informe a data da consulta: ");
         dataConsulta = cadastroConsultaScanner.nextLine();
 
-    System.out.println("Informe a hora da consulta: ");
+    System.out.print("Informe a hora da consulta: ");
         horaConsulta = cadastroConsultaScanner.nextLine();
     
-    System.out.println("Informe se a consulta é revisão (Sim/Não): ");
+    System.out.print("Informe se a consulta é revisão (Sim/Não): ");
         revisaoConsulta = cadastroConsultaScanner.nextLine();
 
-    System.out.println("Informe o paciente que irá realizar a consulta: ");
+    System.out.print("Informe o paciente que irá realizar a consulta: ");
         pacienteConsulta = cadastroConsultaScanner.nextLine();
 
-    System.out.println("Informe o médico que irá realizar a consulta:");
+    System.out.print("Informe o médico que irá realizar a consulta:");
         medicoConsulta = cadastroConsultaScanner.nextLine();
 
     cadastroConsultaScanner.close(); // fecha o cadastroConsultaScanner, não vai mais consumir memória
@@ -144,16 +147,16 @@ public class CadastraDados {
     System.out.println("        Cadastro de Clinica        ");
     System.out.println("===================================");
 
-    System.out.println("Informe o nome da clinica: ");
+    System.out.print("Informe o nome da clinica: ");
       nomeClinica = cadastroClinicaScanner.nextLine();
 
-    System.out.println("Informe o cnpj da clinica: ");
+    System.out.print("Informe o cnpj da clinica: ");
       cnpjClinica = cadastroClinicaScanner.nextLine();
     
-    System.out.println("Informe o endereço da clinica: ");
+    System.out.print("Informe o endereço da clinica: ");
       enderecoClinica = cadastroClinicaScanner.nextLine();
 
-    System.out.println("Informe o telefone da clinica: ");
+    System.out.print("Informe o telefone da clinica: ");
       telefoneClinica = cadastroClinicaScanner.nextLine();
 
     cadastroClinicaScanner.close(); // fecha o cadastroClinicaScanner, não vai mais consumir memória
@@ -222,6 +225,12 @@ public class CadastraDados {
     informacoesCadastroClinica += "Telefone: " + telefoneClinica;
     System.out.println(informacoesCadastroClinica);
     }
+
+  //   static  void adicionaPaciente(){
+  //     Set<Paciente> pacientes = new HashSet<Paciente>();
+  //     Paciente paciente = new Paciente();
+  //     pacientes.add(paciente);
+  // }
 
     // TODO: Fazer lógica do método equals
     @Override
