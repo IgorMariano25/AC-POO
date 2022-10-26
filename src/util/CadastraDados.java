@@ -1,6 +1,13 @@
+package util;
 import java.util.Objects;
 import java.util.Scanner;
-class CadastraDados {
+
+import clinica.Agenda;
+import clinica.Clinica;
+import clinica.Consulta;
+import pessoas.Medico;
+import pessoas.Paciente;
+public class CadastraDados {
   Paciente pacientes[];
   Medico medicos[];
   Consulta consultas[];
