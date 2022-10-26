@@ -14,7 +14,7 @@ public class CadastraDados {
   Agenda agendas[];
   Clinica clinica[];
 
-  CadastraDados() {
+  public CadastraDados() {
     pacientes = new Paciente[5]; 
     medicos = new Medico[5];
     agendas = new Agenda[20];   
