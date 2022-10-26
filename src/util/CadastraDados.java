@@ -29,8 +29,9 @@ public class CadastraDados {
     return 0;
   }
 
-  String horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, consultorioAgenda;
-  String intervaloAgenda;
+  String horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, 
+  consultorioAgenda, intervaloAgenda;
+  
   Integer converteDiaSemana;
   public void cadastraAgenda() {
     Scanner cadastroAgendaScanner = new Scanner(System.in);
