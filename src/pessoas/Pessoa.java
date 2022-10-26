@@ -1,3 +1,6 @@
+package pessoas;
+import util.Telefone;
+
 public abstract class Pessoa {
     protected String nome;
     protected String cpf;

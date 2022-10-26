@@ -1,3 +1,7 @@
+package clinica;
+
+import util.Telefone;
+
 public class Clinica {
     private String nome;
     private String cnpj;

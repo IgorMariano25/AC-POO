@@ -1,3 +1,8 @@
+package pessoas;
+import clinica.Agenda;
+import clinica.Clinica;
+import clinica.Consultorio;
+
 public class Medico extends Pessoa {
     private String crm;
     private String especialidade;
