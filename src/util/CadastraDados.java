@@ -143,6 +143,11 @@ public class CadastraDados {
 
     cadastroConsultaScanner.close(); // fecha o cadastroConsultaScanner, não vai mais consumir memória
   }
+  //   static  void adicionaPaciente(){
+  //     Set<Paciente> pacientes = new HashSet<Paciente>();
+  //     Paciente paciente = new Paciente();
+  //     pacientes.add(paciente);
+  // }
 
   String nomeClinica, cnpjClinica, enderecoClinica, telefoneClinica;
   public void cadastrarClinica() {
@@ -165,12 +170,6 @@ public class CadastraDados {
 
     cadastroClinicaScanner.close(); // fecha o cadastroClinicaScanner, não vai mais consumir memória
   }
-
-  //   static  void adicionaPaciente(){
-  //     Set<Paciente> pacientes = new HashSet<Paciente>();
-  //     Paciente paciente = new Paciente();
-  //     pacientes.add(paciente);
-  // }
 
   String informacoesGeraisDeCadastro;
   public void exibeInformacoesGerais(){
