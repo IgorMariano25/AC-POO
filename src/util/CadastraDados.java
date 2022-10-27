@@ -90,7 +90,7 @@ public class CadastraDados {
       System.out.print("Informe e-mail do paciente: ");
         emailPaciente = cadastroPacienteScanner.nextLine();
 
-      System.out.print("Informe dia do nascimento do paciente: ");
+      System.out.print("Informe (numericamente) o dia do nascimento do paciente: ");
         diaNascimentoPaciente = cadastroPacienteScanner.nextInt();
 
       System.out.print("Informe (numericamente) o mês do nascimento do paciente: ");
