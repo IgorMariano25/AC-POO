@@ -99,12 +99,15 @@ public class CadastraDados {
       System.out.print("Informe (numericamente) o ano do nascimento do paciente: ");
         anoNascimentoPaciente = cadastroPacienteScanner.nextInt();
 
-        Paciente paciente = new Paciente(nomePaciente, cpfPaciente, emailPaciente, 
-        LocalDate.of(anoNascimentoPaciente,mesNascimentoPaciente, diaNascimentoPaciente));
-      
-      cadastroPacienteScanner.close(); // fecha o cadastroPacienteScanner, não vai mais consumir memória
+      while (cadastroPacienteScanner.hasNextLine()){
+        if (!cadastroPacienteScanner.hasNextLine()) {
+          cadastroPacienteScanner.close(); // fecha o cadastroPacienteScanner, não vai mais consumir memória
+          adicionaPaciente();
+          break;
+        }
+      }
     };
-    
+
     public void cadastrarEndereco(){
 
   }
