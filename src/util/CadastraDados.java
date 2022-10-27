@@ -111,6 +111,13 @@ public class CadastraDados {
     // LocalDate dia = LocalDate.of(2000, 11, 16);
     // paciente.cadastraEndereco(...);
 
+     public void adicionaPaciente(){
+      Set<Paciente> pacientes = new HashSet<Paciente>();
+      Paciente paciente = new Paciente(nomePaciente, cpfPaciente, emailPaciente, 
+      LocalDate.of(anoNascimentoPaciente,mesNascimentoPaciente, diaNascimentoPaciente));
+      pacientes.add(paciente);
+  }
+
   String nomeMedico, cpfMedico, emailMedico;
   public void cadastrarMedico(){
     Scanner cadastroMedicoScanner = new Scanner(System.in);
