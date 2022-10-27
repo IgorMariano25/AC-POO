@@ -93,27 +93,27 @@ public class CadastraDados {
     
     public void cadastrarEndereco(){
 
-    }
+  }
     // LocalDate dia = LocalDate.of(2000, 11, 16);
     // paciente.cadastraEndereco(...);
 
-    String nomeMedico, cpfMedico, emailMedico;
-    public void cadastrarMedico(){
-      Scanner cadastroMedicoScanner = new Scanner(System.in);
-      System.out.println("===================================");
-      System.out.println("        Cadastro de Médico         ");
-      System.out.println("===================================");
-  
-      System.out.print("Informe o nome do médico: ");
-       nomeMedico = cadastroMedicoScanner.nextLine();
+  String nomeMedico, cpfMedico, emailMedico;
+  public void cadastrarMedico(){
+    Scanner cadastroMedicoScanner = new Scanner(System.in);
+    System.out.println("===================================");
+    System.out.println("        Cadastro de Médico         ");
+    System.out.println("===================================");
 
-      System.out.print("Informe o CPF do médico: ");
-        cpfMedico = cadastroMedicoScanner.nextLine();
-      
-      System.out.print("Informe e-mail do médico: ");
-         emailMedico = cadastroMedicoScanner.nextLine();
+    System.out.print("Informe o nome do médico: ");
+      nomeMedico = cadastroMedicoScanner.nextLine();
 
-      cadastroMedicoScanner.close(); // fecha o cadastroMedicoScanner, não vai mais consumir memória
+    System.out.print("Informe o CPF do médico: ");
+      cpfMedico = cadastroMedicoScanner.nextLine();
+    
+    System.out.print("Informe e-mail do médico: ");
+        emailMedico = cadastroMedicoScanner.nextLine();
+
+    cadastroMedicoScanner.close(); // fecha o cadastroMedicoScanner, não vai mais consumir memória
   }
 
   String dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta;
@@ -234,21 +234,21 @@ public class CadastraDados {
   // }
 
     // TODO: Fazer lógica do método equals
-    @Override
-    public boolean equals(Object o) {
-        if (o == this)
-            return true;
-        if (!(o instanceof CadastraDados)) {
-            return false;
-        }
-        CadastraDados cadastraDados = (CadastraDados) o;
-        return
-        Objects.equals(cpfPaciente, cadastraDados.cpfPaciente) && 
-        Objects.equals(cpfMedico, cadastraDados.cpfMedico) && 
-        Objects.equals(dataConsulta, cadastraDados.dataConsulta) && 
-        Objects.equals(horaConsulta, cadastraDados.horaConsulta) &&
-        Objects.equals(pacienteConsulta, cadastraDados.pacienteConsulta) && 
-        Objects.equals(medicoConsulta, cadastraDados.medicoConsulta);
+  @Override
+  public boolean equals(Object o) {
+      if (o == this)
+          return true;
+      if (!(o instanceof CadastraDados)) {
+          return false;
+      }
+      CadastraDados cadastraDados = (CadastraDados) o;
+      return
+      Objects.equals(cpfPaciente, cadastraDados.cpfPaciente) && 
+      Objects.equals(cpfMedico, cadastraDados.cpfMedico) && 
+      Objects.equals(dataConsulta, cadastraDados.dataConsulta) && 
+      Objects.equals(horaConsulta, cadastraDados.horaConsulta) &&
+      Objects.equals(pacienteConsulta, cadastraDados.pacienteConsulta) && 
+      Objects.equals(medicoConsulta, cadastraDados.medicoConsulta);
   }
 }
   /*
