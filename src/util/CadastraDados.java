@@ -238,13 +238,13 @@ public class CadastraDados {
 
     // TODO: Fazer lógica do método equals
   @Override
-  public boolean equals(Object o) {
-      if (o == this)
+  public boolean equals(Object object) {
+      if (object == this)
           return true;
-      if (!(o instanceof CadastraDados)) {
+      if (!(object instanceof CadastraDados)) {
           return false;
       }
-      CadastraDados cadastraDados = (CadastraDados) o;
+      CadastraDados cadastraDados = (CadastraDados) object;
       return
       Objects.equals(cpfPaciente, cadastraDados.cpfPaciente) && 
       Objects.equals(cpfMedico, cadastraDados.cpfMedico) && 
