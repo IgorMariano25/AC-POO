@@ -99,11 +99,6 @@ class Main {
   }
 }
 
-//     static void testaInterface() {
-//       Exame[] exames = new Exame[5];
-//     }
-// }
-
     //Emição de nota de cobrança:
     // Paciente paciente1 = new Paciente("José", "1234", "email_real@gmail.com", LocalDate.of(1958, 8, 25));
     // Medico medico1 = new Medico("Aurélio", "98765", "email_de_medico@yahoo.com", "65651", "ortopedista");
