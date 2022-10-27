@@ -73,7 +73,8 @@ public class CadastraDados {
       cadastroAgendaScanner.close();
     };
   
-  String nomePaciente, cpfPaciente, emailPaciente;
+  String  nomePaciente, cpfPaciente, emailPaciente;
+  Integer diaNascimentoPaciente, mesNascimentoPaciente, anoNascimentoPaciente;
   public void cadastrarPaciente() {
     Scanner cadastroPacienteScanner = new Scanner(System.in);
       System.out.println("===================================");
@@ -89,7 +90,17 @@ public class CadastraDados {
       System.out.print("Informe e-mail do paciente: ");
         emailPaciente = cadastroPacienteScanner.nextLine();
 
-        Paciente paciente = new Paciente(nomePaciente, cpfPaciente, emailPaciente, );
+      System.out.print("Informe dia do nascimento do paciente: ");
+        diaNascimentoPaciente = cadastroPacienteScanner.nextInt();
+
+      System.out.print("Informe (numericamente) o mês do nascimento do paciente: ");
+        mesNascimentoPaciente = cadastroPacienteScanner.nextInt();
+
+      System.out.print("Informe (numericamente) o ano do nascimento do paciente: ");
+        anoNascimentoPaciente = cadastroPacienteScanner.nextInt();
+
+        Paciente paciente = new Paciente(nomePaciente, cpfPaciente, emailPaciente, 
+        LocalDate.of(anoNascimentoPaciente,mesNascimentoPaciente, diaNascimentoPaciente));
       
       cadastroPacienteScanner.close(); // fecha o cadastroPacienteScanner, não vai mais consumir memória
     };
