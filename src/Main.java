@@ -94,10 +94,10 @@ class Main {
           System.out.println("Volte sempre!");
           opcao = "";
         scanner.close();
-        }
       }
     }
   }
+}
 
 //     static void testaInterface() {
 //       Exame[] exames = new Exame[5];
