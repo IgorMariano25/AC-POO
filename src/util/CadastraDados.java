@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.Set;
 
 import clinica.Agenda;
 import clinica.Clinica;
