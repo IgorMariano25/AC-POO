@@ -166,6 +166,12 @@ public class CadastraDados {
     cadastroClinicaScanner.close(); // fecha o cadastroClinicaScanner, não vai mais consumir memória
   }
 
+  //   static  void adicionaPaciente(){
+  //     Set<Paciente> pacientes = new HashSet<Paciente>();
+  //     Paciente paciente = new Paciente();
+  //     pacientes.add(paciente);
+  // }
+
   String informacoesGeraisDeCadastro;
   public void exibeInformacoesGerais(){
     informacoesGeraisDeCadastro = "==============================================\n";
@@ -229,12 +235,6 @@ public class CadastraDados {
     informacoesCadastroClinica += "Telefone: " + telefoneClinica;
     System.out.println(informacoesCadastroClinica);
     }
-
-  //   static  void adicionaPaciente(){
-  //     Set<Paciente> pacientes = new HashSet<Paciente>();
-  //     Paciente paciente = new Paciente();
-  //     pacientes.add(paciente);
-  // }
 
     // TODO: Fazer lógica do método equals
   @Override
