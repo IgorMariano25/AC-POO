@@ -268,6 +268,12 @@ public class CadastraDados {
       Objects.equals(pacienteConsulta, cadastraDados.pacienteConsulta) && 
       Objects.equals(medicoConsulta, cadastraDados.medicoConsulta);
   }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(pacientes[], medicos[], consultas[], agendas[], clinica[], horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, consultorioAgenda, intervaloAgenda, converteDiaSemana, nomePaciente, cpfPaciente, emailPaciente, diaNascimentoPaciente, mesNascimentoPaciente, anoNascimentoPaciente, nomeMedico, cpfMedico, emailMedico, dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta, nomeClinica, cnpjClinica, enderecoClinica, telefoneClinica, informacoesGeraisDeCadastro, informacoesCadastroPaciente, informacoesCadastroMedico, informacoesCadastroConsulta, informacoesCadastroClinica);
+  }
+
 }
   /*
   1 - fulano - cardiologia
