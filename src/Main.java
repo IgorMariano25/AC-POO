@@ -67,7 +67,7 @@ class Main {
         case "2":
           System.out.println("opção 2: Exibir pacientes cadastrados!");
           // TODO: Criar método para exibir os pacientes cadastrados
-          banco.exibeInfo();
+          banco.exibeInformacoesPaciente();
           break;
         case "3":
           System.out.println("opção 3: Cadastrar médico!");
@@ -76,7 +76,7 @@ class Main {
         case "4":
           System.out.println("opção 4: Exibir médicos cadastrados!");
           // TODO: Criar método para exibir os médicos cadastrados
-          banco.exibeInfo();
+          banco.exibeInformacoesMedico();
           break;
         case "5":
           System.out.println("opção 5: Cadastrar Agenda!");
