@@ -37,4 +37,21 @@ public class LeitoraDados {
         this.scanner.close();
         //fecha scanner pra não deixar a leitura de dados aberta
     }
+
+    public String[] lerNovoMedico () {
+        System.out.println("Informe o cpf: ");
+        String cpf = this.lerTexto();
+
+        System.out.println("Informe o nome: ");
+        String nome  = this.lerTexto();
+
+        return new String[] {cpf, nome};
+    }
+
+    public String[] lerMedicoAlteracao(String cpf) {
+        System.out.println("Informe o nome: ");
+        String nome  = this.lerTexto();
+
+        return new String[] {cpf, nome};
+    }
 }

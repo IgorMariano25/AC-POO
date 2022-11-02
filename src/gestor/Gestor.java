@@ -8,6 +8,7 @@ public class Gestor {
     LeitoraDados leitoraDados;
     ClienteDB db;
     GestorCliente gestorCliente;
+    GestorMedico gestorMedico;
 
     public Gestor(String caminho) throws IOException {
         //caminho pra salvar a lista de arquivos
@@ -17,9 +18,10 @@ public class Gestor {
     }
 
     public void exibeOpcoes() {
-        System.out.println("Selecione um número, ou aperte qualquer outra tecla para voltar ao menu anterior: ");
+        System.out.println("Selecione um número, ou aperte qualquer outra tecla para encerrar o programa: ");
         System.out.println("1 - menu clientes");
-
+        System.out.println("2 - menu médicos");
+        System.out.println("3 - menu clínicas"); //TODO - entidades da clínica e seus bancos de dado
     }
 
     //método pra processar as opções
@@ -28,13 +30,19 @@ public class Gestor {
         String opcaoMenu = "0";
 
         switch (opcao) {
-            case "1": //adicionar cliente
+            case "1": //cliente
             while (!opcaoMenu.equals("")){
                 gestorCliente.exibeOpcoes();
-                opcao = gestorCliente.processaOpcoes();
+                opcaoMenu = gestorCliente.processaOpcoes();
                     }
 
             break;
+
+            case "2": //médicos
+            while (!opcaoMenu.equals("")){
+                gestorMedico.exibeOpcoes();
+                opcaoMenu = gestorCliente.processaOpcoes();
+                    }
 
             default:
                 System.out.println("Volte sempre!");
