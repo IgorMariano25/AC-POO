@@ -38,6 +38,8 @@ public class LeitoraDados {
         //fecha scanner pra não deixar a leitura de dados aberta
     }
 
+    //médico
+
     public String[] lerNovoMedico () {
         System.out.println("Informe o cpf: ");
         String cpf = this.lerTexto();
@@ -53,5 +55,24 @@ public class LeitoraDados {
         String nome  = this.lerTexto();
 
         return new String[] {cpf, nome};
+    }
+
+    //clínica
+
+    public String[] lerNovaClinica () {
+        System.out.println("Informe o cep: ");
+        String cep = this.lerTexto();
+
+        System.out.println("Informe o nome: ");
+        String endereco  = this.lerTexto();
+
+        return new String[] {cep, endereco};
+    }
+
+    public String[] lerClinicaAlteracao(String cep){
+        System.out.println("Informe o endereço: ");
+        String endereco  = this.lerTexto();
+
+        return new String[] {cep, endereco};
     }
 }

@@ -2,6 +2,8 @@ package gestor;
 import java.io.IOException;
 
 import persistencia.ClienteDB;
+import persistencia.MedicoDB;
+import persistencia.ClinicaDB;
 import util.LeitoraDados;
 
 public class Gestor {
@@ -9,6 +11,7 @@ public class Gestor {
     ClienteDB db;
     GestorCliente gestorCliente;
     GestorMedico gestorMedico;
+    GestorClinica gestorClinica;
 
     public Gestor(String caminho) throws IOException {
         //caminho pra salvar a lista de arquivos
@@ -41,7 +44,13 @@ public class Gestor {
             case "2": //médicos
             while (!opcaoMenu.equals("")){
                 gestorMedico.exibeOpcoes();
-                opcaoMenu = gestorCliente.processaOpcoes();
+                opcaoMenu = gestorMedico.processaOpcoes();
+                    }
+
+            case "3": //clínicas
+            while (!opcaoMenu.equals("")){
+                GestorClinica.exibeOpcoes();
+                opcaoMenu = gestorClinica.processaOpcoes();
                     }
 
             default:
