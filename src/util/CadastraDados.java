@@ -256,7 +256,7 @@ public class CadastraDados {
   public boolean equals(Object object) {
       if (object == this)
           return true;
-      if (!(object instanceof CadastraDados)) {
+      if (!(object instanceof CadastraDados) || (object == null)) {
           return false;
       }
       CadastraDados cadastraDados = (CadastraDados) object;
