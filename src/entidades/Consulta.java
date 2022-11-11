@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Consulta {
     private String nome;
-    public Paciente paciente;
+    public String paciente;
     private String cpfPaciente;
     private String endereco;
 
