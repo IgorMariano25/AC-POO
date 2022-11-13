@@ -43,13 +43,13 @@ public class CadastraDados {
       System.out.println("===================================");
   
       System.out.print("Informe o dia da semana da consulta: ");
-        System.out.print("1 - Domingo");
-        System.out.print("2 - Segunda-feira");
-        System.out.print("3 - Terça-feira");
-        System.out.print("4 - Quarta-feira");
-        System.out.print("5 - Quinta-feira");
-        System.out.print("6 - Sexta-feira");
-        System.out.print("7 - Sábado");
+        System.out.println("1 - Domingo");
+        System.out.println("2 - Segunda-feira");
+        System.out.println("3 - Terça-feira");
+        System.out.println("4 - Quarta-feira");
+        System.out.println("5 - Quinta-feira");
+        System.out.println("6 - Sexta-feira");
+        System.out.println("7 - Sábado");
         converteDiaSemana = cadastroAgendaScanner.nextInt();
 
       System.out.print("Informe o horário de início da consulta: ");
