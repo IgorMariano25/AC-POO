@@ -2,6 +2,7 @@ package entidades;
 
 import java.io.IOException;
 import java.util.Objects;
+import util.Gerenciador;
 
 public class Cliente {
     private String cpf;
