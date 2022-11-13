@@ -42,7 +42,7 @@ public class CadastraDados {
       System.out.println("        cadastro de Agenda         ");
       System.out.println("===================================");
   
-      System.out.print("Informe o dia da semana da consulta: ");
+      System.out.println("Informe o dia da semana da consulta: ");
         System.out.println("1 - Domingo");
         System.out.println("2 - Segunda-feira");
         System.out.println("3 - Terça-feira");
