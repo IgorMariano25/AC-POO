@@ -208,7 +208,7 @@ public class CadastraDados {
 
     informacoesCadastroPaciente += "Nome: " + nomePaciente;
     informacoesCadastroPaciente += "CPF: " + cpfPaciente;
-    informacoesCadastroPaciente += "E-mail: " + emailPaciente;
+    informacoesCadastroPaciente += "E-mail: " + emailPaciente  + "\n";
     System.out.println(informacoesCadastroPaciente);
   }  
 
@@ -220,7 +220,7 @@ public class CadastraDados {
 
     informacoesCadastroMedico += "Nome: " + nomeMedico;
     informacoesCadastroMedico += "CPF: " + cpfMedico;
-    informacoesCadastroMedico += "E-mail: " + emailMedico;
+    informacoesCadastroMedico += "E-mail: " + emailMedico + "\n";
     System.out.println(informacoesCadastroMedico);
     }
 
@@ -234,7 +234,7 @@ public class CadastraDados {
     informacoesCadastroConsulta += "Médico: " + medicoConsulta;
     informacoesCadastroConsulta += "Data: " + dataConsulta;
     informacoesCadastroConsulta += "Hora: " + horaConsulta;
-    informacoesCadastroConsulta += "É uma consulta de revisão ? " + revisaoConsulta;
+    informacoesCadastroConsulta += "É uma consulta de revisão ? " + revisaoConsulta + "\n";
     System.out.println(informacoesCadastroConsulta);
     }
 
@@ -247,7 +247,7 @@ public class CadastraDados {
     informacoesCadastroClinica += "Nome: " + nomeClinica  ;
     informacoesCadastroClinica += "CNPJ: " + cnpjClinica ;
     informacoesCadastroClinica += "Endereco: " + enderecoClinica;
-    informacoesCadastroClinica += "Telefone: " + telefoneClinica;
+    informacoesCadastroClinica += "Telefone: " + telefoneClinica  + "\n";
     System.out.println(informacoesCadastroClinica);
     }
 
@@ -272,7 +272,7 @@ public class CadastraDados {
   @Override
   public int hashCode() {
     return Objects.hash(
-    pacientes[], medicos[], consultas[], agendas[], clinica[], 
+    // pacientes[], medicos[], consultas[], agendas[], clinica[], 
     horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, 
     consultorioAgenda, intervaloAgenda, converteDiaSemana, nomePaciente, 
     cpfPaciente, emailPaciente, diaNascimentoPaciente, mesNascimentoPaciente,
