@@ -98,12 +98,3 @@ class Main {
     }
   }
 }
-
-    //Emição de nota de cobrança:
-    // Paciente paciente1 = new Paciente("José", "1234", "email_real@gmail.com", LocalDate.of(1958, 8, 25));
-    // Medico medico1 = new Medico("Aurélio", "98765", "email_de_medico@yahoo.com", "65651", "ortopedista");
-    // Consulta exibe = new Consulta(true, paciente1, medico1);
-    // System.out.println("opção 4: Emitir nota de cobrança!"+ "\n" + exibe.emitirNotaCobranca());
-
-  // --> TODO: Implementar método hashCode e Equals
-  // --> TODO: Organizar exibição de mensagens para o usuário
