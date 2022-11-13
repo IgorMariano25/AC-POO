@@ -1,5 +1,6 @@
 package entidades;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public class Cliente {
