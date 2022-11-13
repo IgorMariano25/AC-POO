@@ -32,7 +32,7 @@ public class Gerenciador {
             case "1": //cliente
             while (!opcaoMenu.equals("")){
                 Cliente.exibeOpcoesMenu();
-                opcaoMenu = processaOpcoesMenu();
+                opcaoMenu = Cliente.processaOpcoesMenu();
                     }
 
             break;
