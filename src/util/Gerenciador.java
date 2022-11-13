@@ -46,7 +46,7 @@ public class Gerenciador {
             case "3": //clínicas
             while (!opcaoMenu.equals("")){
                 Clinica.exibeOpcoesMenu();
-                opcaoMenu = processaOpcoesMenu();
+                opcaoMenu = Clinica.processaOpcoesMenu();
                     }
 
             default:
