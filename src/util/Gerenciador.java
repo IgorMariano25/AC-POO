@@ -40,7 +40,7 @@ public class Gerenciador {
             case "2": //médicos
             while (!opcaoMenu.equals("")){
                 Medico.exibeOpcoesMenu();
-                opcaoMenu = processaOpcoesMenu();
+                opcaoMenu = Medico.processaOpcoesMenu();
                     }
 
             case "3": //clínicas
