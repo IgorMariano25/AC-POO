@@ -47,6 +47,7 @@ public class Clinica {
             new CadastraDados().exibeInformacoesClinica();
             break;            
     }
+        scanner.close();
         return opcao;
 }
 

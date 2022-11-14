@@ -46,8 +46,9 @@ public class Medico extends Pessoa {
             case "2": //Listar Médicos
             System.out.println("Lista de Médicos cadastrados:");
             new CadastraDados().exibeInformacoesMedico();
-            break;            
-    }
+            break;
+        }
+        scanner.close();
         return opcao;
 }
 

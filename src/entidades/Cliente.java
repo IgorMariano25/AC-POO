@@ -47,6 +47,7 @@ public class Cliente {
             new CadastraDados().exibeInformacoesPaciente();
             break;            
     }
+        scanner.close();
         return opcao;
 }
 
