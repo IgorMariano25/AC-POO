@@ -34,7 +34,7 @@ public class Medico extends Pessoa {
     }
 
     public static String processaOpcoesMenu() throws IOException {
-        String opcao = Gerenciador.lerTexto();
+        String opcao = new Gerenciador().lerTexto();
         switch (opcao){
             case "1": //Cadastrar Médico
             new CadastraDados().cadastrarMedico();
