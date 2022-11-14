@@ -45,7 +45,7 @@ public class Cliente {
             case "2": //Listar Médicos
             System.out.println("Lista de Médicos cadastrados:");
             new CadastraDados().exibeInformacoesPaciente();
-            break;            
+            break;
     }
         scanner.close();
         return opcao;

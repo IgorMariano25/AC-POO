@@ -45,7 +45,7 @@ public class Clinica {
             case "2": //Listar Clinica
             System.out.println("Lista de Médicos cadastrados:");
             new CadastraDados().exibeInformacoesClinica();
-            break;            
+            break;
     }
         scanner.close();
         return opcao;
