@@ -1,7 +1,11 @@
 package pessoas;
+import java.io.IOException;
+
 import clinica.Agenda;
 import clinica.Clinica;
 import clinica.Consultorio;
+import util.CadastraDados;
+import util.Gerenciador;
 
 public class Medico extends Pessoa {
     private String crm;
@@ -28,6 +32,21 @@ public class Medico extends Pessoa {
         System.out.println( "5 - Cadastrar clinica");
         System.out.println( "Qualquer outra tecla - Sair do programa");
     }
+
+    public static String processaOpcoesMenu() throws IOException {
+        String opcao = Gerenciador.lerTexto();
+        switch (opcao){
+            case "1": //Cadastrar Médico
+            new CadastraDados().cadastrarMedico();
+            break;
+
+            case "2": //Listar Médicos
+            System.out.println("Lista de Médicos cadastrados:");
+            new CadastraDados().exibeInformacoesMedico();
+            break;            
+    }
+        return opcao;
+}
 
     @Override
     public void exibeInfo() {
