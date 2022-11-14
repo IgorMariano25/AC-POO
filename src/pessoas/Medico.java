@@ -6,7 +6,6 @@ import clinica.Agenda;
 import clinica.Clinica;
 import clinica.Consultorio;
 import util.CadastraDados;
-import util.Gerenciador;
 
 public class Medico extends Pessoa {
     private String crm;
