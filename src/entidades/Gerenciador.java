@@ -1,8 +1,6 @@
-package util;
+package entidades;
 
 import pessoas.Medico;
-import entidades.Cliente;
-import entidades.Clinica;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -25,14 +23,13 @@ public class Gerenciador {
         return scanner.nextLine();
     }
     
-    public static String processaOpcoesMenu() throws IOException {
+    public String processaOpcoesMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
         String opcaoMenu = scanner.nextLine();
 
         switch (opcaoMenu) {
             case "1": //cliente
             while (!opcaoMenu.equals("")){
-                 Cliente.exibeOpcoesMenu();
                  opcaoMenu = Cliente.processaOpcoesMenu();
                      }
 
@@ -40,13 +37,11 @@ public class Gerenciador {
 
             case "2": //médicos
             while (!opcaoMenu.equals("")){
-                Medico.exibeOpcoesMenu();
                 opcaoMenu = Medico.processaOpcoesMenu();
                     }
 
             case "3": //clínicas
             while (!opcaoMenu.equals("")){
-                 Clinica.exibeOpcoesMenu();
                  opcaoMenu = Clinica.processaOpcoesMenu();
                      }
 
