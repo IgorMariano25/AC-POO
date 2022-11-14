@@ -1,6 +1,7 @@
 package util;
 
 import pessoas.Medico;
+import entidades.Cliente;
 import entidades.Clinica;
 
 import java.io.IOException;
@@ -9,30 +10,32 @@ import java.util.Scanner;
 public class Gerenciador {
     private Scanner scanner;
     public static void exibeOpcoesMenu() {
-        System.out.println( "\nSistema de agendamento de consultas");
-        System.out.println( "Informe a opção desejada:");
-        System.out.println( "1 - Cadastrar paciente");
-        System.out.println( "2 - Exibir pacientes cadastrados");
-        System.out.println( "3 - Cadastrar médico");
+        System.out.println("\nSistema de agendamento de consultas");
+        System.out.println("Informe a opção desejada:");
+        System.out.println("1 - Cadastrar paciente");
+        System.out.println("2 - Exibir pacientes cadastrados");
+        System.out.println("3 - Cadastrar médico");
         System.out.println("4 - Exibir Médicos cadastrados");
-        System.out.println( "5 - Cadastrar clinica");
+        System.out.println("5 - Cadastrar clinica");
         System.out.println("6 - Exibir clinica cadastrada");
-        System.out.println( "Qualquer outra tecla - Sair do programa");
+        System.out.println("Qualquer outra tecla - Sair do programa");
     }
     
     public String lerTexto() {
         return scanner.nextLine();
     }
+    
     public static String processaOpcoesMenu() throws IOException {
-        String opcao = new Gerenciador().lerTexto();
+         Scanner scanner = new Scanner(System.in);
+        String opcao = scanner.nextLine();
         String opcaoMenu = "0";
 
         switch (opcaoMenu) {
-            // case "1": //cliente
-            // while (!opcaoMenu.equals("")){
-            //     Cliente.exibeOpcoesMenu();
-            //     opcaoMenu = Cliente.processaOpcoesMenu();
-            //         }
+            case "1": //cliente
+            while (!opcaoMenu.equals("")){
+                 Cliente.exibeOpcoesMenu();
+                 opcaoMenu = Cliente.processaOpcoesMenu();
+                     }
 
             //break;
 
