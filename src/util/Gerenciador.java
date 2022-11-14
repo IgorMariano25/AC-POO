@@ -57,6 +57,7 @@ public class Gerenciador {
             break;
         }
 
+        scanner.close();
         return opcao;
     }
 }
