@@ -34,8 +34,7 @@ public class Clinica {
 
     public static String processaOpcoesMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        String opcao = scanner.nextLine();
-        String opcaoMenu = "0";
+        String opcaoMenu = scanner.nextLine();
         switch (opcaoMenu){
             case "1": //Cadastrar Clinica
             new CadastraDados().cadastrarClinica();
@@ -47,7 +46,7 @@ public class Clinica {
             break;
     }
         scanner.close();
-        return opcao;
+        return opcaoMenu;
 }
 
     @Override

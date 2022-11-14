@@ -26,9 +26,8 @@ public class Gerenciador {
     }
     
     public static String processaOpcoesMenu() throws IOException {
-         Scanner scanner = new Scanner(System.in);
-        String opcao = scanner.nextLine();
-        String opcaoMenu = "0";
+        Scanner scanner = new Scanner(System.in);
+        String opcaoMenu = scanner.nextLine();
 
         switch (opcaoMenu) {
             case "1": //cliente
@@ -37,7 +36,7 @@ public class Gerenciador {
                  opcaoMenu = Cliente.processaOpcoesMenu();
                      }
 
-            //break;
+            break;
 
             case "2": //médicos
             while (!opcaoMenu.equals("")){
@@ -53,11 +52,11 @@ public class Gerenciador {
 
             default:
                 System.out.println("Volte sempre!");
-                opcao = "";
+                opcaoMenu = "";
             break;
         }
 
         scanner.close();
-        return opcao;
+        return opcaoMenu;
     }
 }
