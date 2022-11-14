@@ -42,5 +42,3 @@ public class Consultorio extends Clinica {
                this.listaTelefones();
     }
 }
-    // TODO: Implementar método hashCode e Equals
-    // TODO: Organizar exibição de mensagens para o usuário

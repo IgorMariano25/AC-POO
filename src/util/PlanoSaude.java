@@ -16,6 +16,3 @@ public class PlanoSaude {
         System.out.println(informaçoesPlanoSaude);
     }
 }
-
-    // TODO: Implementar método hashCode e Equals
-    // TODO: Organizar exibição de mensagens para o usuário

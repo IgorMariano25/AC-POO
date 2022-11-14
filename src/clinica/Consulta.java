@@ -68,5 +68,3 @@ public class Consulta {
                "Às: " + this.hora.format(tf);
     }
 }
-// TODO: Implementar método hashCode e Equals
-// TODO: Organizar exibição de mensagens para o usuário

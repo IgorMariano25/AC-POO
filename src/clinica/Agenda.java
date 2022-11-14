@@ -110,5 +110,3 @@ public class Agenda {
                ": " + this.horaInicio.format(dtf) + " - " + this.horaFim.format(dtf);
     }
 }
-// TODO: Implementar método hashCode e Equals
-// TODO: Organizar exibição de mensagens para o usuário
