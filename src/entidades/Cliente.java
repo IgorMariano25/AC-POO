@@ -20,7 +20,10 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public static void exibeOpcoesMenu() {
+    public Cliente() {
+    }
+
+    public void exibeOpcoesMenu() {
         System.out.println( "\nSistema de agendamento de consultas");
         System.out.println( "Informe a opção desejada:");
         System.out.println( "1 - Cadastrar paciente");
