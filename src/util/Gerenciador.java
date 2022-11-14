@@ -1,8 +1,6 @@
 package util;
 
 import pessoas.Medico;
-import pessoas.Paciente;
-import entidades.Cliente;
 import entidades.Clinica;
 
 import java.io.IOException;
@@ -16,27 +14,27 @@ public class Gerenciador {
         System.out.println( "1 - Cadastrar paciente");
         System.out.println( "2 - Exibir pacientes cadastrados");
         System.out.println( "3 - Cadastrar médico");
-        System.out.println(" 4 - Exibir Médicos cadastrados");
+        System.out.println("4 - Exibir Médicos cadastrados");
         System.out.println( "5 - Cadastrar clinica");
-        System.out.println(" 6 - Exibir clinica cadastrada");
+        System.out.println("6 - Exibir clinica cadastrada");
         System.out.println( "Qualquer outra tecla - Sair do programa");
     }
     
-    public static String lerTexto() {
+    public String lerTexto() {
         return scanner.nextLine();
     }
     public static String processaOpcoesMenu() throws IOException {
-        String opcao = Gerenciador.lerTexto();
+        String opcao = new Gerenciador().lerTexto();
         String opcaoMenu = "0";
 
         switch (opcaoMenu) {
-            case "1": //cliente
-            while (!opcaoMenu.equals("")){
-                Cliente.exibeOpcoesMenu();
-                opcaoMenu = Cliente.processaOpcoesMenu();
-                    }
+            // case "1": //cliente
+            // while (!opcaoMenu.equals("")){
+            //     Cliente.exibeOpcoesMenu();
+            //     opcaoMenu = Cliente.processaOpcoesMenu();
+            //         }
 
-            break;
+            //break;
 
             case "2": //médicos
             while (!opcaoMenu.equals("")){
@@ -46,9 +44,9 @@ public class Gerenciador {
 
             case "3": //clínicas
             while (!opcaoMenu.equals("")){
-                Clinica.exibeOpcoesMenu();
-                opcaoMenu = Clinica.processaOpcoesMenu();
-                    }
+                 Clinica.exibeOpcoesMenu();
+                 opcaoMenu = Clinica.processaOpcoesMenu();
+                     }
 
             default:
                 System.out.println("Volte sempre!");
