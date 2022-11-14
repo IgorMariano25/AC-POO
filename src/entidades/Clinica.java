@@ -5,6 +5,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 import util.CadastraDados;
+import util.Gerenciador;
 
 public class Clinica {
     private String cep;
