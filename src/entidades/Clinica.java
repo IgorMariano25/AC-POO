@@ -1,6 +1,11 @@
 package entidades;
 
+import java.io.IOException;
 import java.util.Objects;
+import java.util.Scanner;
+
+import util.CadastraDados;
+import util.Gerenciador;
 
 public class Clinica {
     private String cep;
@@ -27,6 +32,23 @@ public class Clinica {
         System.out.println(" 6 - Exibir clinica cadastrada");
         System.out.println( "Qualquer outra tecla - Sair do programa");
     }
+
+    public static String processaOpcoesMenu() throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        String opcao = scanner.nextLine();
+        String opcaoMenu = "0";
+        switch (opcaoMenu){
+            case "1": //Cadastrar Clinica
+            new CadastraDados().cadastrarClinica();
+            break;
+
+            case "2": //Listar Clinica
+            System.out.println("Lista de Médicos cadastrados:");
+            new CadastraDados().exibeInformacoesClinica();
+            break;            
+    }
+        return opcao;
+}
 
     @Override
     public boolean equals(Object obj) {

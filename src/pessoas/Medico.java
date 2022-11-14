@@ -1,5 +1,6 @@
 package pessoas;
 import java.io.IOException;
+import java.util.Scanner;
 
 import clinica.Agenda;
 import clinica.Clinica;
@@ -34,8 +35,10 @@ public class Medico extends Pessoa {
     }
 
     public static String processaOpcoesMenu() throws IOException {
-        String opcao = new Gerenciador().lerTexto();
-        switch (opcao){
+        Scanner scanner = new Scanner(System.in);
+        String opcao = scanner.nextLine();
+        String opcaoMenu = "0";
+        switch (opcaoMenu){
             case "1": //Cadastrar Médico
             new CadastraDados().cadastrarMedico();
             break;
