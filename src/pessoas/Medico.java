@@ -35,8 +35,7 @@ public class Medico extends Pessoa {
 
     public static String processaOpcoesMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        String opcao = scanner.nextLine();
-        String opcaoMenu = "0";
+        String opcaoMenu = scanner.nextLine();
         switch (opcaoMenu){
             case "1": //Cadastrar Médico
             new CadastraDados().cadastrarMedico();
@@ -48,7 +47,7 @@ public class Medico extends Pessoa {
             break;
         }
         scanner.close();
-        return opcao;
+        return opcaoMenu;
 }
 
     @Override
@@ -84,6 +83,3 @@ public class Medico extends Pessoa {
         }
     }
 }
-
-    // TODO: Implementar método hashCode e Equals
-    // TODO: Organizar exibição de mensagens para o usuário

@@ -44,6 +44,3 @@ public class Paciente extends Pessoa {
         System.out.println(msg);
     }
 }
-
-    // TODO: Implementar método hashCode e Equals
-    // TODO: Organizar exibição de mensagens para o usuário

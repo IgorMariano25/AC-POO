@@ -24,5 +24,3 @@ public class Endereco {
                this.cidade + "/" + this.uf + "\nCEP: " + this.cep;
     }
 }
-    // TODO: Implementar método hashCode e Equals
-    // TODO: Organizar exibição de mensagens para o usuário
