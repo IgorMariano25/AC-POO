@@ -12,8 +12,44 @@ import clinica.Consulta;
 import entidades.Cliente;
 import entidades.Medico;
 import pessoas.Paciente;
-public class CadastraDados {
 
+public class CadastraDados {
+  //Paciente pacientes[];
+  Medico medicos[];
+  Consulta consultas[];
+  Agenda agendas[];
+  Clinica clinica[];
+
+  public CadastraDados() {
+    //pacientes = new Paciente[5]; 
+    medicos = new Medico[5];
+    agendas = new Agenda[20];
+    consultas = new Consulta[20];
+    clinica = new Clinica[1]; 
+  }
+
+  public static void cadastraPacientes() {
+    Set<String> pacientes = new HashSet<String>();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Cadastro de pacientes: ");
+
+      String input;
+
+      while (pacientes.size() < 6) {
+          System.out.print("Digite o nome do paciente: ");
+          input = scanner.nextLine().trim();
+          if (input.isEmpty()) {
+              System.out.println("Por favor digite nome válido");
+              continue;
+          }
+          if (!pacientes.add(input))
+              System.out.println("Esse paciente já foi cadastrado (" + input + ')');
+      }
+    }
+
+    System.out.println("Pacientes cadastrados: " + pacientes);
+  }
+  
   // Retorna o inteiro referente ao índice do próximo elemento
   // vazio dentro do array.
   public int proximoElementoVazio(Object[] dado) {
@@ -172,9 +208,7 @@ public class CadastraDados {
     System.out.print("Informe o telefone da clinica: ");
       telefoneClinica = cadastroClinicaScanner.nextLine();
 
-    while (cadastroClinicaScanner.hasNextLine()){
-      if (!cadastroClinicaScanner.hasNextLine()) {
-        cadastroClinicaScanner.close();
+    cadastroClinicaScanner.close();
   }
 
   String informacoesGeraisDeCadastro;

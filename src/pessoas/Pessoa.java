@@ -8,6 +8,14 @@ public abstract class Pessoa {
     protected Telefone[] telefones;
     private int numTels;
 
+    public Pessoa (String cpf, Telefone[] telefones) {
+        this.nome = "";
+        this.cpf = cpf;
+        this.eMail = "";
+        this.telefones = telefones;
+        this.numTels = 0;
+    }
+
     public Pessoa(String nome, String cpf, String eMail) {
         this.nome = nome;
         this.cpf = cpf;

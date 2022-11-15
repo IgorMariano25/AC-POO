@@ -1,5 +1,7 @@
 package entidades;
 
+import pessoas.Medico;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -20,7 +22,7 @@ public class Gerenciador {
         System.out.print("\nInforme a opção desejada: ");
     }
     
-    public String processaOpcoesMenu() throws IOException {
+    public static String processaOpcoesMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
         String opcaoMenu = scanner.nextLine();
 
@@ -29,6 +31,8 @@ public class Gerenciador {
             while (!opcaoMenu.equals("")){
                  opcaoMenu = Cliente.processaOpcoesMenu();
                      }
+
+            break;
 
             case "2": //médicos
             while (!opcaoMenu.equals("")){
