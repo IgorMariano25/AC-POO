@@ -216,7 +216,7 @@ public class CadastraDados {
   String informacoesCadastroMedico;
     public void exibeInformacoesMedico(){
     System.out.println("===================================");
-    System.out.println("        Cadastro de Médico       ");
+    System.out.println("        Cadastro de Médico         ");
     System.out.println("===================================");
 
     informacoesCadastroMedico += "Nome: " + nomeMedico;
