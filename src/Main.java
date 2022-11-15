@@ -1,7 +1,4 @@
 import entidades.Gerenciador;
-
-//import gestor.GestorCliente;
-
 public class Main{
     public static void main(String[] args) throws Exception {
         String opcao = "0";
