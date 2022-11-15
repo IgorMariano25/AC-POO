@@ -1,6 +1,7 @@
 package entidades;
 
 import pessoas.Medico;
+import pessoas.Paciente;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class Gerenciador {
         System.out.println("===================================");
         System.out.println("           Menu de opções          ");
         System.out.println("===================================");
-        System.out.println("1 - Cliente- (Paciente)");
+        System.out.println("1 - Paciente");
         System.out.println("2 - Médicos");
         System.out.println("3 - Clínica");
         System.out.println("Qualquer outra tecla - Sair do programa");
@@ -29,7 +30,7 @@ public class Gerenciador {
         switch (opcaoMenu) {
             case "1": //cliente
             while (!opcaoMenu.equals("")){
-                 opcaoMenu = Cliente.processaOpcoesMenu();
+                 opcaoMenu = Paciente.processaOpcoesMenu();
                      }
 
             break;

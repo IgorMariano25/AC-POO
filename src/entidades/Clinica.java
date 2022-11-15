@@ -7,17 +7,23 @@ import java.util.Scanner;
 import util.CadastraDados;
 
 public class Clinica {
-    private String cep;
-    private String endereco;
+    private String cepClinica;
+    private String enderecoClinica;
+    private String cnpjClinica;
+    private String telefoneClinica;
 
-    public Clinica(String cep) {
-        this.cep = cep;
-        this.endereco = "";
+    public Clinica(String cepClinica) {
+        this.cepClinica = cepClinica;
+        this.enderecoClinica = "";
+        this.cnpjClinica = "";
+        this.telefoneClinica = "";
     }
 
-    public Clinica(String cep, String endereco) {
-        this.cep = cep;
-        this.endereco = endereco;
+    public Clinica() {
+        this.cepClinica = cepClinica;
+        this.enderecoClinica = enderecoClinica;
+        this.cnpjClinica = cnpjClinica;
+        this.telefoneClinica = cnpjClinica;
     }
 
     public static void exibeOpcoesMenu() {

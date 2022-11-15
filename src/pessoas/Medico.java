@@ -8,6 +8,7 @@ import clinica.Agenda;
 import clinica.Clinica;
 import clinica.Consultorio;
 import util.CadastraDados;
+import util.Telefone;
 
 public class Medico extends Pessoa {
     private String cpfMedico;
@@ -16,14 +17,16 @@ public class Medico extends Pessoa {
     private String especialidadeMedico;
     private String crmMedico;
 
-    public Medico(String cpfMedico) {
+    public Medico(String nome, String cpf, String eMail, Telefone[] telefones) {
+        super(cpf, telefones);
         this.cpfMedico = cpfMedico;
         this.nomeMedico = "";
         this.emailMedico = "";
         this.crmMedico = "";
     }
 
-    public Medico(String cpfMedico, String nomeMedico, String emailMedico, String crmMedico) {
+    public Medico(String nome, String cpf, String eMail, String dataNascimento) {
+        super(nome, cpf, eMail);
         this.cpfMedico = cpfMedico;
         this.nomeMedico = nomeMedico;
         this.emailMedico = emailMedico;
@@ -34,10 +37,10 @@ public class Medico extends Pessoa {
     public void exibeInfo() {
         String msg = "";
 
-        msg += this.nome + " - " + this.especialidade + "\n";
+        msg += this.nome + " - " + this.especialidadeMedico + "\n";
         msg += this.eMail + "\n";
         msg += "CPF: " + this.cpf + "\n";
-        msg += "CRM: " + this.crm + "\n";
+        msg += "CRM: " + this.crmMedico + "\n";
         msg += "Telefones:" + "\n";
         msg += this.listaTelefones();
         System.out.println(msg);

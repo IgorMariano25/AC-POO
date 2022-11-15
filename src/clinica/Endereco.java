@@ -8,7 +8,7 @@ public class Endereco {
     private String cidade;
     private String uf;
 
-    public Endereco(String logradouro, int numero, Endereco endereco, String bairro, String cep, String cidade, String uf) {
+    public Endereco(String logradouro, int numero, String endereco, String bairro, String cep, String cidade, String uf) {
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = endereco;

@@ -9,8 +9,7 @@ import java.util.Set;
 import clinica.Agenda;
 import entidades.Clinica;
 import clinica.Consulta;
-import entidades.Cliente;
-import entidades.Medico;
+import pessoas.Medico;
 import pessoas.Paciente;
 
 public class CadastraDados {
