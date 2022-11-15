@@ -32,8 +32,6 @@ public class Gerenciador {
                  opcaoMenu = Cliente.processaOpcoesMenu();
                      }
 
-            break;
-
             case "2": //médicos
             while (!opcaoMenu.equals("")){
                 opcaoMenu = Medico.processaOpcoesMenu();
