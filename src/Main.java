@@ -1,4 +1,4 @@
-import util.Gerenciador;
+import entidades.Gerenciador;
 
 //import gestor.GestorCliente;
 
