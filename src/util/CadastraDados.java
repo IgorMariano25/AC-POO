@@ -137,7 +137,7 @@ public class CadastraDados {
     System.out.print("Informe e-mail do médico: ");
         emailMedico = cadastroMedicoScanner.nextLine();
 
-    cadastroMedicoScanner.close(); // fecha o cadastroMedicoScanner, não vai mais consumir memória
+    cadastroMedicoScanner.close();
   }
 
   String dataConsulta, horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta;
@@ -184,7 +184,7 @@ public class CadastraDados {
     System.out.print("Informe o telefone da clinica: ");
       telefoneClinica = cadastroClinicaScanner.nextLine();
 
-    cadastroClinicaScanner.close(); // fecha o cadastroClinicaScanner, não vai mais consumir memória
+    cadastroClinicaScanner.close();
   }
 
   String informacoesGeraisDeCadastro;
