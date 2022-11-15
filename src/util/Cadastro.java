@@ -112,9 +112,6 @@ public class Cadastro {
   public int proximoElementoVazio(Object[] dado) {
     return 0;
   }
-  
-    // LocalDate dia = LocalDate.of(2000, 11, 16);
-    // paciente.cadastraEndereco(...);
 
     public void adicionaPaciente(){
         try (Scanner scanner = new Scanner(System.in)) {
@@ -219,35 +216,5 @@ public class Cadastro {
     informacoesCadastroClinica += "Telefone: " + telefoneClinica  + "\n";
     System.out.println(informacoesCadastroClinica);
     }
-
-  @Override
-  public boolean equals(Object object) {
-      if (object == this)
-          return true;
-      if (!(object instanceof CadastraDados) || (object == null)) {
-          return false;
-      }
-      CadastraDados cadastraDados = (CadastraDados) object;
-      return
-      Objects.equals(cpfPaciente, cadastraDados.cpfPaciente) && 
-      Objects.equals(cpfMedico, cadastraDados.cpfMedico) && 
-      Objects.equals(dataConsulta, cadastraDados.dataConsulta) && 
-      Objects.equals(horaConsulta, cadastraDados.horaConsulta) &&
-      Objects.equals(pacienteConsulta, cadastraDados.pacienteConsulta) && 
-      Objects.equals(medicoConsulta, cadastraDados.medicoConsulta);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(
-    horarioInicioAgenda, horarioFimAgenda, medicoAgenda, clinicaAgenda, 
-    consultorioAgenda, intervaloAgenda, converteDiaSemana, nomePaciente, 
-    cpfPaciente, emailPaciente, diaNascimentoPaciente, mesNascimentoPaciente,
-    anoNascimentoPaciente, nomeMedico, cpfMedico, emailMedico, dataConsulta, 
-    horaConsulta, revisaoConsulta, pacienteConsulta, medicoConsulta, nomeClinica, 
-    cnpjClinica, enderecoClinica, telefoneClinica, informacoesGeraisDeCadastro, 
-    informacoesCadastroPaciente, informacoesCadastroMedico, 
-    informacoesCadastroConsulta, informacoesCadastroClinica);
-  }
 
 }
