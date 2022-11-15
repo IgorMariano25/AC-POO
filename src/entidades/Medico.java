@@ -29,23 +29,23 @@ public class Medico {
     }
     
     @Override
-    public boolean equals(Object obj) {
-        if (obj == this)
+    public boolean equals(Object o) {
+        if (o == this)
             return true;
-        if (!(obj instanceof Medico)) {
+        if (!(o instanceof Medico)) {
             return false;
         }
-        Medico medico = (Medico) obj;
-        return medico.cpf.equals(this.cpf);
+        Medico medico = (Medico) o;
+        return Objects.equals(cpfMedico, medico.cpfMedico) && Objects.equals(nomeMedico, medico.nomeMedico) && Objects.equals(emailMedico, medico.emailMedico) && Objects.equals(especialidadeMedico, medico.especialidadeMedico) && Objects.equals(crmMedico, medico.crmMedico);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(cpf, nome);
+        return Objects.hash(cpfMedico, nomeMedico, emailMedico, especialidadeMedico, crmMedico);
     }
 
     @Override
     public String toString() {
-        return cpf + " - " + nome;
+        return cpfMedico + " - " + nomeMedico;
     }
 }
