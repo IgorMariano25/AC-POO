@@ -3,17 +3,24 @@ package entidades;
 import java.util.Objects;
 
 public class Medico {
-    private String cpf;
-    private String nome;
+    private String cpfMedico;
+    private String nomeMedico;
+    private String emailMedico;
+    private String especialidadeMedico;
+    private String crmMedico;
 
-    public Medico(String cpf) {
-        this.cpf = cpf;
-        this.nome = "";
+    public Medico(String cpfMedico) {
+        this.cpfMedico = cpfMedico;
+        this.nomeMedico = "";
+        this.emailMedico = "";
+        this.crmMedico = "";
     }
 
-    public Medico(String cpf, String nome) {
-        this.cpf = cpf;
-        this.nome = nome;
+    public Medico(String cpfMedico, String nomeMedico, String emailMedico, String crmMedico) {
+        this.cpfMedico = cpfMedico;
+        this.nomeMedico = nomeMedico;
+        this.emailMedico = emailMedico;
+        this.crmMedico = crmMedico;
     }
 
     public static void exibeOpcoesMenu() {
@@ -59,12 +66,11 @@ public class Medico {
 
     @Override
     public int hashCode() {
-        return Objects.hash(cpfMedico, nomeMedico, emailMedico, 
-                            especialidadeMedico, crmMedico);
+        return Objects.hash(cpfMedico, nomeMedico, emailMedico, especialidadeMedico, crmMedico);
     }
 
     @Override
     public String toString() {
-        return cpfMedico + " - " + nomeMedico;
+        return cpfMedico + " - " + nomeMedico + " - " + emailMedico + " - " + especialidadeMedico + " - " + crmMedico;
     }
 }
