@@ -25,6 +25,23 @@ public class Medico {
         System.out.println("Qualquer outra tecla - Sair do programa");
         System.out.print("\nInforme a opção desejada: ");
     }
+
+    public static String processaOpcoesMenu() throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        String opcaoMenu = scanner.nextLine();
+        switch (opcaoMenu){
+            case "1": //Cadastrar Médico
+            new CadastraDados().cadastrarMedico();
+            break;
+
+            case "2": //Listar Médicos
+            new CadastraDados().exibeInformacoesMedico();
+            break;
+        }
+        scanner.close();
+        return opcaoMenu;
+    }
+    
     @Override
     public boolean equals(Object o) {
         if (o == this)
