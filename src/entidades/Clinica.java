@@ -59,7 +59,7 @@ public class Clinica {
 
     @Override
     public int hashCode() {
-        return Objects.hash(cep, endereco);
+        return Objects.hash(cepClinica, enderecoClinica, cnpjClinica, telefoneClinica);
     }
 
     @Override
