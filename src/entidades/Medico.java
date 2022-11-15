@@ -36,7 +36,11 @@ public class Medico {
             return false;
         }
         Medico medico = (Medico) o;
-        return Objects.equals(cpfMedico, medico.cpfMedico) && Objects.equals(nomeMedico, medico.nomeMedico) && Objects.equals(emailMedico, medico.emailMedico) && Objects.equals(especialidadeMedico, medico.especialidadeMedico) && Objects.equals(crmMedico, medico.crmMedico);
+        return Objects.equals(cpfMedico, medico.cpfMedico) && 
+        Objects.equals(nomeMedico, medico.nomeMedico) && 
+        Objects.equals(emailMedico, medico.emailMedico) && 
+        Objects.equals(especialidadeMedico, medico.especialidadeMedico) && 
+        Objects.equals(crmMedico, medico.crmMedico);
     }
 
     @Override
