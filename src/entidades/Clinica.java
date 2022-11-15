@@ -47,14 +47,17 @@ public class Clinica {
 }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj == this)
+    public boolean equals(Object object) {
+        if (object == this)
             return true;
-        if (!(obj instanceof Clinica)) {
+        if (!(object instanceof Clinica)) {
             return false;
         }
-        Clinica clinica = (Clinica) obj;
-        return clinica.cep.equals(this.cep);
+        Clinica clinica = (Clinica) object;
+        return Objects.equals(cepClinica, clinica.cepClinica) && 
+        Objects.equals(enderecoClinica, clinica.enderecoClinica) && 
+        Objects.equals(cnpjClinica, clinica.cnpjClinica) && 
+        Objects.equals(telefoneClinica, clinica.telefoneClinica);
     }
 
     @Override
