@@ -64,6 +64,10 @@ public class Clinica {
 
     @Override
     public String toString() {
-        return cep + " - " + endereco;
+        return 
+            "CEP: " + cepClinica + "\n" +
+            "Endereço: " + enderecoClinica + "\n" +
+            "CNPJ: " + cnpjClinica + "\n" +
+            "Telefone: " + telefoneClinica;
     }
 }
