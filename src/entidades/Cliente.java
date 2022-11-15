@@ -37,12 +37,11 @@ public class Cliente {
         Scanner scanner = new Scanner(System.in);
         String opcaoMenu = scanner.nextLine();
         switch (opcaoMenu){
-            case "1": //Cadastrar Médico
+            case "1": 
             new CadastraDados().cadastrarPaciente();
             break;
 
-            case "2": //Listar Médicos
-            System.out.println("Lista de Médicos cadastrados:");
+            case "2": 
             new CadastraDados().exibeInformacoesPaciente();
             break;
     }

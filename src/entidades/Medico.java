@@ -30,11 +30,11 @@ public class Medico {
         Scanner scanner = new Scanner(System.in);
         String opcaoMenu = scanner.nextLine();
         switch (opcaoMenu){
-            case "1": //Cadastrar Médico
+            case "1":
             new CadastraDados().cadastrarMedico();
             break;
 
-            case "2": //Listar Médicos
+            case "2":
             new CadastraDados().exibeInformacoesMedico();
             break;
         }
