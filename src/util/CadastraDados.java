@@ -13,19 +13,6 @@ import entidades.Cliente;
 import entidades.Medico;
 import pessoas.Paciente;
 public class CadastraDados {
-  Paciente pacientes[];
-  Medico medicos[];
-  Consulta consultas[];
-  Agenda agendas[];
-  Clinica clinica[];
-
-  public CadastraDados() {
-    pacientes = new Paciente[5]; 
-    medicos = new Medico[5];
-    agendas = new Agenda[20];
-    consultas = new Consulta[20];
-    clinica = new Clinica[1]; 
-  }
 
   // Retorna o inteiro referente ao índice do próximo elemento
   // vazio dentro do array.
@@ -185,7 +172,9 @@ public class CadastraDados {
     System.out.print("Informe o telefone da clinica: ");
       telefoneClinica = cadastroClinicaScanner.nextLine();
 
-    cadastroClinicaScanner.close();
+    while (cadastroClinicaScanner.hasNextLine()){
+      if (!cadastroClinicaScanner.hasNextLine()) {
+        cadastroClinicaScanner.close();
   }
 
   String informacoesGeraisDeCadastro;
