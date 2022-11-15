@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 import clinica.Agenda;
-import clinica.Clinica;
+import entidades.Clinica;
 import clinica.Consulta;
 import entidades.Cliente;
 import entidades.Medico;
