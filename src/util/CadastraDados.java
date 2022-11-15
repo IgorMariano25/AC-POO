@@ -122,7 +122,7 @@ public class CadastraDados {
     pacientes.add(paciente);
   }
 
-  String nomeMedico, cpfMedico, emailMedico;
+  String nomeMedico, cpfMedico, emailMedico, especialidadeMedico, crmMedico;
   public void cadastrarMedico(){
     Scanner cadastroMedicoScanner = new Scanner(System.in);
     System.out.println("===================================");
