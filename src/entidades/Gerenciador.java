@@ -7,20 +7,19 @@ import java.util.Scanner;
 
 public class Gerenciador {
     private Scanner scanner;
-    public static void exibeOpcoesMenu() {
-        System.out.println("\nSistema de agendamento de consultas");
-        System.out.println("Informe a opção desejada:");
-        System.out.println("1 - Cadastrar paciente");
-        System.out.println("2 - Exibir pacientes cadastrados");
-        System.out.println("3 - Cadastrar médico");
-        System.out.println("4 - Exibir Médicos cadastrados");
-        System.out.println("5 - Cadastrar clinica");
-        System.out.println("6 - Exibir clinica cadastrada");
-        System.out.println("Qualquer outra tecla - Sair do programa");
-    }
-    
+
     public String lerTexto() {
         return scanner.nextLine();
+    }
+    public static void exibeOpcoesMenu() {
+        System.out.println("===================================");
+        System.out.println("           Menu de opções          ");
+        System.out.println("===================================");
+        System.out.println("1 - Cliente- (Paciente)");
+        System.out.println("2 - Médicos");
+        System.out.println("3 - Clínica");
+        System.out.println("Qualquer outra tecla - Sair do programa");
+        System.out.print("\nInforme a opção desejada: ");
     }
     
     public String processaOpcoesMenu() throws IOException {
