@@ -1,7 +1,5 @@
 package entidades;
 
-import pessoas.Medico;
-
 import java.io.IOException;
 import java.util.Scanner;
 
