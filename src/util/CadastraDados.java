@@ -252,7 +252,6 @@ public class CadastraDados {
     System.out.println(informacoesCadastroClinica);
     }
 
-    // TODO: Fazer lógica do método equals
   @Override
   public boolean equals(Object object) {
       if (object == this)
