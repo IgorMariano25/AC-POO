@@ -45,7 +45,8 @@ public class Medico {
 
     @Override
     public int hashCode() {
-        return Objects.hash(cpfMedico, nomeMedico, emailMedico, especialidadeMedico, crmMedico);
+        return Objects.hash(cpfMedico, nomeMedico, emailMedico, 
+                            especialidadeMedico, crmMedico);
     }
 
     @Override
