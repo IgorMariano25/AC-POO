@@ -15,7 +15,7 @@ import pessoas.Paciente;
 public class CadastraDados {
   //Paciente pacientes[];
   Medico medicos[];
-  Consulta consultas[];
+  //Consulta consultas[];
   Agenda agendas[];
   Clinica clinica[];
 
@@ -23,7 +23,7 @@ public class CadastraDados {
     //pacientes = new Paciente[5]; 
     medicos = new Medico[5];
     agendas = new Agenda[20];
-    consultas = new Consulta[20];
+    //consultas = new Consulta[20];
     clinica = new Clinica[1]; 
   }
 
@@ -48,6 +48,29 @@ public class CadastraDados {
 
     System.out.println("Pacientes cadastrados: " + pacientes);
   }
+
+  Set<String> consultas = new HashSet<String>();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Marcar consulta: ");
+
+            String inputMedico;
+            String inputHora;
+
+            while (consultas.size() < 5) {
+                System.out.print("Digite o nome do médico: ");
+                inputMedico = scanner.nextLine().trim();
+                System.out.print("Digite o horário da consulta: ");
+                inputHora = scanner.nextLine().trim();
+                if (inputMedico.isEmpty()) {
+                    System.out.println("Por favor digite nome válido");
+                    continue;
+                }
+                if (!consultas.add(inputHora))
+                    System.out.println("Esse médico está com o horário ocupado (" + inputHora + ')');
+            }
+    }
+
+    System.out.println("Consultas marcadas: " + consultas);
   
   // Retorna o inteiro referente ao índice do próximo elemento
   // vazio dentro do array.

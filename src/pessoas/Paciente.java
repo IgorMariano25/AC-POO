@@ -20,8 +20,8 @@ public class Paciente extends Pessoa {
     private String plano;
     private String endereco;
 
-    public Paciente(String nome, String cpf, String eMail, LocalDate localDate) {
-        super(cpf, localDate);
+    public Paciente(String nome, String cpf, String eMail, Telefone[] telefones) {
+        super(cpf, telefones);
         this.dataNascimento = "";
         this.planoParticular = "" != null;
         this.plano = "";
@@ -55,7 +55,7 @@ public class Paciente extends Pessoa {
         adicionaEndereco.close();
         System.out.println("Endereço: " + endereco);
         String[] arr = endereco.toArray(new String[0]);
-        System.out.println("Array is " + Arrays.toString(arr));
+        System.out.println("Endereço: " + Arrays.toString(arr));
     }
 
     public boolean getPlanoParticular() {

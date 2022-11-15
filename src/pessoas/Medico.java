@@ -1,8 +1,12 @@
 package pessoas;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.Set;
 
 import clinica.Agenda;
 import clinica.Clinica;
@@ -46,6 +50,32 @@ public class Medico extends Pessoa {
         System.out.println(msg);
     }
 
+    public static void adicionarConsultas() {
+        Set<String> consultas = new HashSet<String>();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Marcar consulta: ");
+
+            String inputMedico;
+            String inputHora;
+
+            while (consultas.size() < 5) {
+                System.out.print("Digite o nome do médico: ");
+                inputMedico = scanner.nextLine().trim();
+                System.out.print("Digite o horário da consulta: ");
+                inputHora = scanner.nextLine().trim();
+                if (inputMedico.isEmpty()) {
+                    System.out.println("Por favor digite nome válido");
+                    continue;
+                }
+                if (!consultas.add(inputHora))
+                    System.out.println("Esse médico está com o horário ocupado (" + inputHora + ')');
+            }
+    }
+
+    System.out.println("Consultas marcadas: " + consultas);
+    }
+
+    /* 
     public void incluirAgenda(int diaSemana, Clinica clinica) {
         if (this.agendasOcupadas > 10) {
             this.agendasOcupadas = 0;
@@ -64,7 +94,7 @@ public class Medico extends Pessoa {
         for (Agenda agenda : this.agendas) {
             System.out.println(agenda);
         }
-    }
+    } */
 
     public static void exibeOpcoesMenu() {
         System.out.println("\n===================================");

@@ -1,4 +1,6 @@
 package pessoas;
+import java.time.LocalDate;
+
 import util.Telefone;
 
 public abstract class Pessoa {
@@ -8,11 +10,11 @@ public abstract class Pessoa {
     protected Telefone[] telefones;
     private int numTels;
 
-    public Pessoa (String cpf, Telefone[] telefones) {
+    public Pessoa (String cpf, Telefone[] localDate) {
         this.nome = "";
         this.cpf = cpf;
         this.eMail = "";
-        this.telefones = telefones;
+        this.telefones = localDate;
         this.numTels = 0;
     }
 
