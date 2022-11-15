@@ -284,9 +284,3 @@ public class CadastraDados {
   }
 
 }
-  /*
-  1 - fulano - cardiologia
-  2 - beltrano - oftalmologia
-
-  2
-  */
