@@ -9,7 +9,8 @@ import java.util.Set;
 import clinica.Agenda;
 import clinica.Clinica;
 import clinica.Consulta;
-import pessoas.Medico;
+import entidades.Cliente;
+import entidades.Medico;
 import pessoas.Paciente;
 public class CadastraDados {
   Paciente pacientes[];
@@ -162,7 +163,7 @@ public class CadastraDados {
     System.out.print("Informe o médico que irá realizar a consulta:");
         medicoConsulta = cadastroConsultaScanner.nextLine();
 
-    cadastroConsultaScanner.close(); // fecha o cadastroConsultaScanner, não vai mais consumir memória
+    cadastroConsultaScanner.close(); 
   }
 
   String nomeClinica, cnpjClinica, enderecoClinica, telefoneClinica;
