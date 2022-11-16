@@ -19,25 +19,7 @@ public class Consulta {
         this.medico = medico;
     }
 
-    public boolean marcarConsulta(LocalDate dia, LocalTime horario, Clinica clinica) {
-        Agenda agendas[] = this.medico.getAgendas();
-
-        // TODO: Revisar ifs
-        for (Agenda agenda : agendas) {
-            if (agenda.getClinicaCnpj() == clinica.getCnpj()) {
-                if (agenda.agendarHorario(dia, horario, this)) {
-                    this.data = dia;
-                    this.hora = horario;
-                    System.out.println("Consulta agendada!");
-                    return true;
-                }
-            }
-        }
-        
-        System.out.println("Houve um erro no agendamento!");
-        return false;
-    }
-
+    
     public String emitirNotaCobranca(){
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         

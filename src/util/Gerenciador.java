@@ -1,10 +1,12 @@
-package entidades;
+package util;
 
 import pessoas.Medico;
 import pessoas.Paciente;
 
 import java.io.IOException;
 import java.util.Scanner;
+
+import entidades.Clinica;
 
 public class Gerenciador {
     private Scanner scanner;
